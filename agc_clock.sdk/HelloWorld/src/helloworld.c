@@ -53,8 +53,7 @@
 int main()
 {
     init_platform();
-
-    while (1) {
+    while(1) {
     	print("Hello World\n\r");
     }
     cleanup_platform();

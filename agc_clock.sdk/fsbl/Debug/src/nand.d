@@ -16,7 +16,7 @@ src/nand.o src/nand.o: ../src/nand.c \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xil_io.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xstatus.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xil_assert.h ../src/fsbl_debug.h \
- C:\Users\rzinkstok\agc_clock\agc_clock.sdk\agc_clock_hw_platform_0/ps7_init.h
+ C:\Users\rzine07792\source\rzinkstok\agc_clock\agc_clock.sdk\agc_clock_hw_platform_0/ps7_init.h
 
 ../../fsbl_bsp/ps7_cortexa9_0/include/xparameters.h:
 
@@ -58,4 +58,4 @@ src/nand.o src/nand.o: ../src/nand.c \
 
 ../src/fsbl_debug.h:
 
-C:\Users\rzinkstok\agc_clock\agc_clock.sdk\agc_clock_hw_platform_0/ps7_init.h:
+C:\Users\rzine07792\source\rzinkstok\agc_clock\agc_clock.sdk\agc_clock_hw_platform_0/ps7_init.h:

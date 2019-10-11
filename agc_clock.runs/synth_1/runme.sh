@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/rzinkstok/agc_clock/agc_clock.runs/synth_1'
+HD_PWD='C:/Users/rzine07792/source/rzinkstok/agc_clock/agc_clock.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,7 +1,7 @@
 //arch = zynq; split = false; format = MCS
 the_ROM_image:
 {
-	[bootloader]C:\Users\rzinkstok\agc_clock\agc_clock.sdk\fsbl\Debug\fsbl.elf
-	C:\Users\rzinkstok\agc_clock\agc_clock.sdk\agc_clock_hw_platform_0\agc_clock.bit
-	C:\Users\rzinkstok\agc_clock\agc_clock.sdk\HelloWorld\Debug\HelloWorld.elf
+	[bootloader]C:\Users\rzine07792\source\rzinkstok\agc_clock\agc_clock.sdk\fsbl\Debug\fsbl.elf
+	C:\Users\rzine07792\source\rzinkstok\agc_clock\agc_clock.sdk\agc_clock_hw_platform_0\agc_clock.bit
+	C:\Users\rzine07792\source\rzinkstok\agc_clock\agc_clock.sdk\HelloWorld\Debug\HelloWorld.elf
 }

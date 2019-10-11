@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="C:/Users/rzinkstok/agc_clock/agc_clock.xpr">
+<Project Version="7" Minor="40" Path="C:/Users/rzine07792/source/rzinkstok/agc_clock/agc_clock.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="1ef56bc43af44c9688cd8f3e40edbe1f"/>

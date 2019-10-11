@@ -17,33 +17,35 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 3
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/rzinkstok/agc_clock/agc_clock.cache/wt [current_project]
-set_property parent.project_path C:/Users/rzinkstok/agc_clock/agc_clock.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/rzine07792/source/rzinkstok/agc_clock/agc_clock.cache/wt [current_project]
+set_property parent.project_path C:/Users/rzine07792/source/rzinkstok/agc_clock/agc_clock.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part numato.com:styx:part0:1.0 [current_project]
-set_property ip_output_repo c:/Users/rzinkstok/agc_clock/agc_clock.cache/ip [current_project]
+set_property ip_output_repo c:/Users/rzine07792/source/rzinkstok/agc_clock/agc_clock.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/agc_clock_divisor.v
-  C:/Users/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/hdl/zynq_ps_wrapper.v
-  C:/Users/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/agc_clock.v
+  C:/Users/rzine07792/source/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/agc_clock_divisor.v
+  C:/Users/rzine07792/source/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/hdl/zynq_ps_wrapper.v
+  C:/Users/rzine07792/source/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/agc_clock.v
 }
-add_files C:/Users/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/zynq_ps.bd
-set_property used_in_implementation false [get_files -all c:/Users/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all C:/Users/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/zynq_ps_ooc.xdc]
+add_files C:/Users/rzine07792/source/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/zynq_ps.bd
+set_property used_in_implementation false [get_files -all c:/Users/rzine07792/source/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all C:/Users/rzine07792/source/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/zynq_ps_ooc.xdc]
 
-read_ip -quiet C:/Users/rzinkstok/agc_clock/agc_clock.srcs/sources_1/ip/prop_clock_divisor/prop_clock_divisor.xci
-set_property used_in_implementation false [get_files -all c:/Users/rzinkstok/agc_clock/agc_clock.srcs/sources_1/ip/prop_clock_divisor/prop_clock_divisor_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rzinkstok/agc_clock/agc_clock.srcs/sources_1/ip/prop_clock_divisor/prop_clock_divisor.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/rzinkstok/agc_clock/agc_clock.srcs/sources_1/ip/prop_clock_divisor/prop_clock_divisor_ooc.xdc]
+read_ip -quiet C:/Users/rzine07792/source/rzinkstok/agc_clock/agc_clock.srcs/sources_1/ip/prop_clock_divisor/prop_clock_divisor.xci
+set_property used_in_implementation false [get_files -all c:/Users/rzine07792/source/rzinkstok/agc_clock/agc_clock.srcs/sources_1/ip/prop_clock_divisor/prop_clock_divisor_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rzine07792/source/rzinkstok/agc_clock/agc_clock.srcs/sources_1/ip/prop_clock_divisor/prop_clock_divisor.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/rzine07792/source/rzinkstok/agc_clock/agc_clock.srcs/sources_1/ip/prop_clock_divisor/prop_clock_divisor_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -53,8 +55,8 @@ set_property used_in_implementation false [get_files -all c:/Users/rzinkstok/agc
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/rzinkstok/agc_clock/agc_clock.srcs/constrs_1/new/agc_clock.xdc
-set_property used_in_implementation false [get_files C:/Users/rzinkstok/agc_clock/agc_clock.srcs/constrs_1/new/agc_clock.xdc]
+read_xdc C:/Users/rzine07792/source/rzinkstok/agc_clock/agc_clock.srcs/constrs_1/new/agc_clock.xdc
+set_property used_in_implementation false [get_files C:/Users/rzine07792/source/rzinkstok/agc_clock/agc_clock.srcs/constrs_1/new/agc_clock.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
