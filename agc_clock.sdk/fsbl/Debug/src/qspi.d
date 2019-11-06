@@ -16,7 +16,7 @@ src/qspi.o src/qspi.o: ../src/qspi.c ../src/qspi.h ../src/fsbl.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xil_io.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xstatus.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xil_assert.h ../src/fsbl_debug.h \
- C:\Users\rzine07792\source\rzinkstok\agc_clock\agc_clock.sdk\agc_clock_hw_platform_0/ps7_init.h \
+ /home/rzinkstok/agc_clock/agc_clock.sdk/agc_clock_hw_platform_0/ps7_init.h \
  ../src/image_mover.h ../../fsbl_bsp/ps7_cortexa9_0/include/xqspips_hw.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xqspips.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xqspips_hw.h
@@ -63,7 +63,7 @@ src/qspi.o src/qspi.o: ../src/qspi.c ../src/qspi.h ../src/fsbl.h \
 
 ../src/fsbl_debug.h:
 
-C:\Users\rzine07792\source\rzinkstok\agc_clock\agc_clock.sdk\agc_clock_hw_platform_0/ps7_init.h:
+/home/rzinkstok/agc_clock/agc_clock.sdk/agc_clock_hw_platform_0/ps7_init.h:
 
 ../src/image_mover.h:
 

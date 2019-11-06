@@ -1,74 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1570785097">
-  <File Type="BITSTR-BMM" Name="agc_clock_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="agc_clock_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="agc_clock_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="agc_clock_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="agc_clock.tcl"/>
-  <File Type="OPT-TIMING" Name="agc_clock_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="agc_clock_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="agc_clock_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="agc_clock_reports.tcl"/>
-  <File Type="OPT-DRC" Name="agc_clock_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="agc_clock.hwdef"/>
-  <File Type="PWROPT-DCP" Name="agc_clock_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="agc_clock_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="agc_clock_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="agc_clock_placed.dcp"/>
-  <File Type="PLACE-IO" Name="agc_clock_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="agc_clock_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="agc_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="agc_clock_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="agc_clock_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="agc_clock_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="agc_clock_incremental_reuse_pre_placed.rpt"/>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1573070977">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="agc_clock.vdi"/>
+  <File Type="BG-DRC" Name="agc_clock.drc"/>
   <File Type="BG-BGN" Name="agc_clock.bgn"/>
-  <File Type="PLACE-TIMING" Name="agc_clock_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="agc_clock_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="agc_clock.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="agc_clock_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="agc_clock_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="agc_clock_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="agc_clock.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="agc_clock_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="agc_clock_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="agc_clock_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="agc_clock_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="agc_clock_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="agc_clock_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="agc_clock.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="agc_clock.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="agc_clock_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="agc_clock.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="agc_clock_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="agc_clock_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="agc_clock.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="agc_clock_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="agc_clock_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="agc_clock_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="agc_clock_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="agc_clock_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="agc_clock_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="agc_clock_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="agc_clock_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="agc_clock_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="agc_clock_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="agc_clock_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="agc_clock_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="agc_clock_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="agc_clock_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="agc_clock_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="agc_clock_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="agc_clock_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="agc_clock_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="agc_clock_bus_skew_postroute_physopted.pb"/>
+  <File Type="BITSTR-BMM" Name="agc_clock_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="agc_clock.nky"/>
+  <File Type="BITSTR-RBT" Name="agc_clock.rbt"/>
+  <File Type="BITSTR-MSK" Name="agc_clock.msk"/>
+  <File Type="BG-BIN" Name="agc_clock.bin"/>
   <File Type="BG-BIT" Name="agc_clock.bit"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="agc_clock_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="agc_clock.rbt"/>
-  <File Type="BITSTR-NKY" Name="agc_clock.nky"/>
-  <File Type="BG-DRC" Name="agc_clock.drc"/>
-  <File Type="RDI-RDI" Name="agc_clock.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="agc_clock_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="agc_clock_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="agc_clock_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="agc_clock_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="agc_clock_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="agc_clock_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="agc_clock_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="agc_clock_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="agc_clock_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="agc_clock_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="agc_clock_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="agc_clock_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="agc_clock_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="agc_clock_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="agc_clock_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="agc_clock_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="agc_clock_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="agc_clock_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="agc_clock_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="agc_clock_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="agc_clock_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="agc_clock_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="agc_clock_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="agc_clock_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="agc_clock_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="agc_clock_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="agc_clock_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="agc_clock_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="agc_clock_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="agc_clock_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="agc_clock_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="agc_clock_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="agc_clock_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="agc_clock_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="agc_clock_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="agc_clock_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="agc_clock_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="agc_clock_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="agc_clock_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="agc_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="agc_clock_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="agc_clock_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="agc_clock_placed.dcp"/>
+  <File Type="PWROPT-DRC" Name="agc_clock_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="agc_clock_pwropt.dcp"/>
+  <File Type="OPT-HWDEF" Name="agc_clock.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="agc_clock_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="agc_clock_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="agc_clock_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="agc_clock_timing_summary_init.rpt"/>
+  <File Type="PWROPT-TIMING" Name="agc_clock_timing_summary_pwropted.rpt"/>
+  <File Type="REPORTS-TCL" Name="agc_clock_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="agc_clock_timing_summary_opted.rpt"/>
+  <File Type="PA-TCL" Name="agc_clock.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/zynq_ps/zynq_ps.bd">
@@ -135,6 +135,6 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="prop_clock_divisor"/>
   <BlockFileSet Type="BlockSrcs" Name="zynq_ps_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="prop_clock_divisor"/>
 </GenRun>

@@ -23,6 +23,16 @@ the customizable channel on the Styx is channel A. The knowledge base article re
 is channel B; this presumably explains the error.
 
 
+Linux
+-----
+
+In order to be able to access the JTAG USB device, run the following script:
+
+```
+sudo /tools/Xilinx/Vivado/2019.1/data/xicom/cable_drivers/lin64/install_script/install_drivers/install_drivers
+```
+
+
 Programming
 -----------
 
