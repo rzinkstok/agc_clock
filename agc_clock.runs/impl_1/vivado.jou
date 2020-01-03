@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Nov 15 12:44:55 2019
-# Process ID: 21407
+# Start of session at: Fri Jan  3 16:27:19 2020
+# Process ID: 12473
 # Current directory: /home/rzinkstok/agc_clock/agc_clock.runs/impl_1
 # Command line: vivado -log agc_clock.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source agc_clock.tcl -notrace
 # Log file: /home/rzinkstok/agc_clock/agc_clock.runs/impl_1/agc_clock.vdi

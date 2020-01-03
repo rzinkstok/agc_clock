@@ -1,0 +1,7 @@
+Running: xsim.dir/agc_clock_behav/xsimk -simmode gui -wdb agc_clock_behav.wdb -simrunnum 0 -socket 36871
+Design successfully loaded
+Design Loading Memory Usage: 62912 KB (Peak: 62912 KB)
+Design Loading CPU Usage: 60 ms
+Simulation completed
+Simulation Memory Usage: 5403412 KB (Peak: 5403412 KB)
+Simulation CPU Usage: 42660 ms

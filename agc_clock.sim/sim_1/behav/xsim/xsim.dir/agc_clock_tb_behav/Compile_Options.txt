@@ -1,0 +1,1 @@
+-wto "1ef56bc43af44c9688cd8f3e40edbe1f" --incr --debug "typical" --relax --mt "8" -L "axi_infrastructure_v1_1_0" -L "axi_vip_v1_1_5" -L "processing_system7_vip_v1_0_7" -L "xil_defaultlib" -L "xilinx_vip" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "agc_clock_tb_behav" "xil_defaultlib.agc_clock_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

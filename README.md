@@ -32,11 +32,22 @@ In order to be able to access the JTAG USB device, run the following script:
 sudo /tools/Xilinx/Vivado/2019.1/data/xicom/cable_drivers/lin64/install_script/install_drivers/install_drivers
 ```
 
+Also, make sure that the virtual machine supports USB 3.0.
+
+Check that the device is properly recognized:
+- Set the Styx boot mode to boot from JTAG (jumper JP1 only between 1 and 2)
+- Connect the JTAG programming cable
+- Power the board
+- `lsusb` should show an entry `ID 0403:6014 Future Technology Devices International, Ltd FT232H Single HS USB-UART/FIFO IC`
+- The permissions on `/dev/bus/usb/<bus number>/<device number>` should be `666`.
+
 
 Programming
 -----------
 
 - After generating the bitstream, export the hardware using `File - Export - Export Hardware...`.
+- At this point, you can use the Hardware Manager to program the device directly. This will work but the program is lost
+  when the device is powered down. To make the program permanent, instead do the following:
 - Select `Include bitstream` and `Local to project`, then click OK; overwrite if asked.
 - Launch the SDK
 - Create a new application project by selecting `File - New - Application Project`

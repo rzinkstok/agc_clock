@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>HelloWorld</name>
-	<comment>Created by SDK v2019.1. fsbl_bsp - ps7_cortexa9_0</comment>
+	<comment>Created by SDK v2019.1. HelloWorld_bsp - ps7_cortexa9_0</comment>
 	<projects>
-		<project>fsbl_bsp</project>
+		<project>HelloWorld_bsp</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

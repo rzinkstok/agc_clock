@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Nov 15 12:40:27 2019
-# Process ID: 20478
+# Start of session at: Fri Jan  3 16:24:28 2020
+# Process ID: 11584
 # Current directory: /home/rzinkstok/agc_clock/agc_clock.runs/synth_1
 # Command line: vivado -log agc_clock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source agc_clock.tcl
 # Log file: /home/rzinkstok/agc_clock/agc_clock.runs/synth_1/agc_clock.vds
@@ -19,25 +19,33 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 20507 
+INFO: Helper process launched with PID 11625 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1710.062 ; gain = 153.715 ; free physical = 2160 ; free virtual = 7481
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1710.027 ; gain = 153.715 ; free physical = 4638 ; free virtual = 8831
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'agc_clock' [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/agc_clock.v:3]
-INFO: [Synth 8-6157] synthesizing module 'prop_clock_divisor' [/home/rzinkstok/agc_clock/agc_clock.runs/synth_1/.Xil/Vivado-20478-fpgadev/realtime/prop_clock_divisor_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'prop_clock_divisor' (1#1) [/home/rzinkstok/agc_clock/agc_clock.runs/synth_1/.Xil/Vivado-20478-fpgadev/realtime/prop_clock_divisor_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'prop_clock_divisor' [/home/rzinkstok/agc_clock/agc_clock.runs/synth_1/.Xil/Vivado-11584-fpgadev/realtime/prop_clock_divisor_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'prop_clock_divisor' (1#1) [/home/rzinkstok/agc_clock/agc_clock.runs/synth_1/.Xil/Vivado-11584-fpgadev/realtime/prop_clock_divisor_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'agc_clock_divisor' [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/agc_clock_divisor.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'agc_clock_divisor' (2#1) [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/agc_clock_divisor.v:3]
+INFO: [Synth 8-6157] synthesizing module 'a02_timer' [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/a02_timer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'nor_3' [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/nor_3.v:3]
+	Parameter iv bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'nor_3' (3#1) [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/nor_3.v:3]
+INFO: [Synth 8-6157] synthesizing module 'nor_3__parameterized0' [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/nor_3.v:3]
+	Parameter iv bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'nor_3__parameterized0' (3#1) [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/nor_3.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'a02_timer' (4#1) [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/a02_timer.v:3]
 INFO: [Synth 8-6157] synthesizing module 'zynq_ps_wrapper' [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/hdl/zynq_ps_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'zynq_ps' [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/synth/zynq_ps.v:13]
-INFO: [Synth 8-6157] synthesizing module 'zynq_ps_processing_system7_0_0' [/home/rzinkstok/agc_clock/agc_clock.runs/synth_1/.Xil/Vivado-20478-fpgadev/realtime/zynq_ps_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zynq_ps_processing_system7_0_0' (3#1) [/home/rzinkstok/agc_clock/agc_clock.runs/synth_1/.Xil/Vivado-20478-fpgadev/realtime/zynq_ps_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'zynq_ps_processing_system7_0_0' [/home/rzinkstok/agc_clock/agc_clock.runs/synth_1/.Xil/Vivado-11584-fpgadev/realtime/zynq_ps_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zynq_ps_processing_system7_0_0' (5#1) [/home/rzinkstok/agc_clock/agc_clock.runs/synth_1/.Xil/Vivado-11584-fpgadev/realtime/zynq_ps_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'zynq_ps_processing_system7_0_0' has 25 connections declared, but only 22 given [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/synth/zynq_ps.v:79]
-INFO: [Synth 8-6155] done synthesizing module 'zynq_ps' (4#1) [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/synth/zynq_ps.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'zynq_ps_wrapper' (5#1) [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/hdl/zynq_ps_wrapper.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'agc_clock' (6#1) [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/agc_clock.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'zynq_ps' (6#1) [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/synth/zynq_ps.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'zynq_ps_wrapper' (7#1) [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/hdl/zynq_ps_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'agc_clock' (8#1) [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/agc_clock.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1763.812 ; gain = 207.465 ; free physical = 2177 ; free virtual = 7501
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1764.777 ; gain = 208.465 ; free physical = 4680 ; free virtual = 8874
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -50,10 +58,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1769.750 ; gain = 213.402 ; free physical = 2171 ; free virtual = 7495
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1767.746 ; gain = 211.434 ; free physical = 4678 ; free virtual = 8873
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1769.750 ; gain = 213.402 ; free physical = 2171 ; free virtual = 7495
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1767.746 ; gain = 211.434 ; free physical = 4678 ; free virtual = 8873
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -71,20 +79,20 @@ Parsing XDC File [/home/rzinkstok/agc_clock/agc_clock.runs/synth_1/dont_touch.xd
 Finished Parsing XDC File [/home/rzinkstok/agc_clock/agc_clock.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1856.383 ; gain = 0.000 ; free physical = 2062 ; free virtual = 7402
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1903.348 ; gain = 0.000 ; free physical = 4562 ; free virtual = 8773
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1856.383 ; gain = 0.000 ; free physical = 2062 ; free virtual = 7402
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1903.348 ; gain = 0.000 ; free physical = 4562 ; free virtual = 8773
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1856.383 ; gain = 300.035 ; free physical = 2123 ; free virtual = 7464
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4636 ; free virtual = 8847
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 1856.383 ; gain = 300.035 ; free physical = 2123 ; free virtual = 7463
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4636 ; free virtual = 8847
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -355,11 +363,13 @@ Applied set_property DONT_TOUCH = true for zync_ps/zynq_ps_i. (constraint file  
 Applied set_property DONT_TOUCH = true for zync_ps/zynq_ps_i/processing_system7_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for prop_clk_div. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1856.383 ; gain = 300.035 ; free physical = 2123 ; free virtual = 7464
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4636 ; free virtual = 8847
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1856.383 ; gain = 300.035 ; free physical = 2114 ; free virtual = 7455
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4627 ; free virtual = 8839
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'a02/NOR37131' (nor_3) to 'a02/NOR37135'
+INFO: [Synth 8-223] decloning instance 'a02/NOR37454' (nor_3) to 'a02/NOR34329'
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -374,8 +384,10 @@ Detailed RTL Component Info :
 	   2 Input      6 Bit       Adders := 1     
 +---Registers : 
 	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 543   
 +---Muxes : 
 	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 49    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -391,6 +403,16 @@ Detailed RTL Component Info :
 	                6 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      6 Bit        Muxes := 1     
+Module nor_3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module nor_3__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -407,9 +429,10 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\a02/NOR37227/next_val_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\agc_clk_div/counter_reg[5] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1856.383 ; gain = 300.035 ; free physical = 2099 ; free virtual = 7445
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4611 ; free virtual = 8828
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -424,13 +447,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'zync_ps/zynq_ps_i/process
 INFO: [Synth 8-5578] Moved timing constraint from pin 'prop_clk_div/clk_out1' to pin 'prop_clk_div/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1856.383 ; gain = 300.035 ; free physical = 1963 ; free virtual = 7316
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4482 ; free virtual = 8706
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1864.391 ; gain = 308.043 ; free physical = 1962 ; free virtual = 7315
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4478 ; free virtual = 8701
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -442,7 +465,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1864.391 ; gain = 308.043 ; free physical = 1961 ; free virtual = 7314
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4478 ; free virtual = 8701
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -466,7 +489,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1878.266 ; gain = 321.918 ; free physical = 1960 ; free virtual = 7313
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4478 ; free virtual = 8701
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -479,7 +502,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1878.266 ; gain = 321.918 ; free physical = 1960 ; free virtual = 7313
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4478 ; free virtual = 8701
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -491,25 +514,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1878.266 ; gain = 321.918 ; free physical = 1960 ; free virtual = 7313
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4478 ; free virtual = 8701
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1878.266 ; gain = 321.918 ; free physical = 1960 ; free virtual = 7313
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4478 ; free virtual = 8701
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1878.266 ; gain = 321.918 ; free physical = 1960 ; free virtual = 7313
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4478 ; free virtual = 8701
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1878.266 ; gain = 321.918 ; free physical = 1960 ; free virtual = 7313
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4478 ; free virtual = 8701
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -529,45 +552,158 @@ Report Cell Usage:
 +------+-------------------------------+------+
 |1     |prop_clock_divisor             |     1|
 |2     |zynq_ps_processing_system7_0_0 |     1|
-|3     |LUT1                           |     1|
-|4     |LUT3                           |     1|
-|5     |LUT4                           |     1|
-|6     |LUT5                           |     1|
-|7     |LUT6                           |     3|
-|8     |FDCE                           |     5|
-|9     |IBUF                           |     1|
-|10    |OBUF                           |     3|
+|3     |LUT2                           |     2|
+|4     |LUT3                           |    40|
+|5     |LUT4                           |    52|
+|6     |LUT5                           |    20|
+|7     |LUT6                           |     4|
+|8     |FDCE                           |   233|
+|9     |FDPE                           |   105|
+|10    |IBUF                           |     1|
+|11    |OBUF                           |    16|
 +------+-------------------------------+------+
 
 Report Instance Areas: 
-+------+--------------+------------------+------+
-|      |Instance      |Module            |Cells |
-+------+--------------+------------------+------+
-|1     |top           |                  |    21|
-|2     |  agc_clk_div |agc_clock_divisor |    12|
-|3     |  zync_ps     |zynq_ps_wrapper   |     3|
-|4     |    zynq_ps_i |zynq_ps           |     3|
-+------+--------------+------------------+------+
++------+--------------+--------------------------+------+
+|      |Instance      |Module                    |Cells |
++------+--------------+--------------------------+------+
+|1     |top           |                          |   478|
+|2     |  a02         |a02_timer                 |   445|
+|3     |    NOR37101  |nor_3                     |     4|
+|4     |    NOR37102  |nor_3_0                   |     4|
+|5     |    NOR37103  |nor_3__parameterized0     |     4|
+|6     |    NOR37104  |nor_3_1                   |     4|
+|7     |    NOR37105  |nor_3__parameterized0_2   |     4|
+|8     |    NOR37106  |nor_3_3                   |     4|
+|9     |    NOR37107  |nor_3__parameterized0_4   |     4|
+|10    |    NOR37111  |nor_3_5                   |     4|
+|11    |    NOR37112  |nor_3_6                   |     4|
+|12    |    NOR37113  |nor_3__parameterized0_7   |     4|
+|13    |    NOR37114  |nor_3_8                   |     4|
+|14    |    NOR37115  |nor_3__parameterized0_9   |     4|
+|15    |    NOR37117  |nor_3__parameterized0_10  |     4|
+|16    |    NOR37118  |nor_3_11                  |     4|
+|17    |    NOR37119  |nor_3__parameterized0_12  |     4|
+|18    |    NOR37121  |nor_3_13                  |     4|
+|19    |    NOR37122  |nor_3_14                  |     4|
+|20    |    NOR37125  |nor_3_15                  |     4|
+|21    |    NOR37126  |nor_3_16                  |     4|
+|22    |    NOR37130  |nor_3_17                  |     4|
+|23    |    NOR37131  |nor_3_18                  |     4|
+|24    |    NOR37137  |nor_3_19                  |     4|
+|25    |    NOR37232  |nor_3_20                  |     4|
+|26    |    NOR37233  |nor_3_21                  |     4|
+|27    |    NOR37234  |nor_3__parameterized0_22  |     4|
+|28    |    NOR37235  |nor_3_23                  |     4|
+|29    |    NOR37236  |nor_3_24                  |     4|
+|30    |    NOR37237  |nor_3_25                  |     4|
+|31    |    NOR37238  |nor_3_26                  |     4|
+|32    |    NOR37239  |nor_3__parameterized0_27  |     4|
+|33    |    NOR37240  |nor_3_28                  |     4|
+|34    |    NOR37241  |nor_3_29                  |     4|
+|35    |    NOR37242  |nor_3_30                  |     4|
+|36    |    NOR37243  |nor_3__parameterized0_31  |     4|
+|37    |    NOR37245  |nor_3__parameterized0_32  |     4|
+|38    |    NOR37301  |nor_3_33                  |     4|
+|39    |    NOR37302  |nor_3__parameterized0_34  |     4|
+|40    |    NOR37303  |nor_3_35                  |     4|
+|41    |    NOR37304  |nor_3_36                  |     4|
+|42    |    NOR37305  |nor_3__parameterized0_37  |     4|
+|43    |    NOR37306  |nor_3_38                  |     4|
+|44    |    NOR37307  |nor_3_39                  |     4|
+|45    |    NOR37308  |nor_3_40                  |     4|
+|46    |    NOR37309  |nor_3__parameterized0_41  |     4|
+|47    |    NOR37310  |nor_3_42                  |     4|
+|48    |    NOR37311  |nor_3_43                  |     4|
+|49    |    NOR37312  |nor_3_44                  |     4|
+|50    |    NOR37313  |nor_3__parameterized0_45  |     4|
+|51    |    NOR37314  |nor_3_46                  |     4|
+|52    |    NOR37315  |nor_3_47                  |     4|
+|53    |    NOR37316  |nor_3_48                  |     4|
+|54    |    NOR37317  |nor_3__parameterized0_49  |     4|
+|55    |    NOR37318  |nor_3_50                  |     4|
+|56    |    NOR37319  |nor_3_51                  |     4|
+|57    |    NOR37320  |nor_3_52                  |     4|
+|58    |    NOR37321  |nor_3__parameterized0_53  |     4|
+|59    |    NOR37322  |nor_3_54                  |     4|
+|60    |    NOR37323  |nor_3_55                  |     4|
+|61    |    NOR37325  |nor_3_56                  |     4|
+|62    |    NOR37326  |nor_3__parameterized0_57  |     4|
+|63    |    NOR37327  |nor_3_58                  |     4|
+|64    |    NOR37328  |nor_3_59                  |     4|
+|65    |    NOR37329  |nor_3_60                  |     4|
+|66    |    NOR37330  |nor_3__parameterized0_61  |     4|
+|67    |    NOR37331  |nor_3_62                  |     4|
+|68    |    NOR37332  |nor_3_63                  |     4|
+|69    |    NOR37333  |nor_3_64                  |     4|
+|70    |    NOR37334  |nor_3__parameterized0_65  |     4|
+|71    |    NOR37335  |nor_3_66                  |     4|
+|72    |    NOR37336  |nor_3_67                  |     4|
+|73    |    NOR37337  |nor_3_68                  |     4|
+|74    |    NOR37338  |nor_3__parameterized0_69  |     4|
+|75    |    NOR37339  |nor_3_70                  |     4|
+|76    |    NOR37340  |nor_3_71                  |     4|
+|77    |    NOR37341  |nor_3_72                  |     4|
+|78    |    NOR37342  |nor_3__parameterized0_73  |     4|
+|79    |    NOR37343  |nor_3_74                  |     4|
+|80    |    NOR37344  |nor_3_75                  |     4|
+|81    |    NOR37345  |nor_3_76                  |     4|
+|82    |    NOR37346  |nor_3_77                  |     4|
+|83    |    NOR37347  |nor_3__parameterized0_78  |     4|
+|84    |    NOR37348  |nor_3_79                  |     4|
+|85    |    NOR37349  |nor_3_80                  |     4|
+|86    |    NOR37355  |nor_3_81                  |     4|
+|87    |    NOR37356  |nor_3_82                  |     5|
+|88    |    NOR37357  |nor_3_83                  |     4|
+|89    |    NOR37358  |nor_3_84                  |     4|
+|90    |    NOR37401  |nor_3__parameterized0_85  |     4|
+|91    |    NOR37404  |nor_3_86                  |     4|
+|92    |    NOR37405  |nor_3__parameterized0_87  |     4|
+|93    |    NOR37407  |nor_3_88                  |     4|
+|94    |    NOR37408  |nor_3__parameterized0_89  |     4|
+|95    |    NOR37411  |nor_3_90                  |     4|
+|96    |    NOR37412  |nor_3__parameterized0_91  |     4|
+|97    |    NOR37415  |nor_3_92                  |     4|
+|98    |    NOR37416  |nor_3__parameterized0_93  |     4|
+|99    |    NOR37422  |nor_3_94                  |     4|
+|100   |    NOR37423  |nor_3__parameterized0_95  |     4|
+|101   |    NOR37427  |nor_3_96                  |     4|
+|102   |    NOR37428  |nor_3__parameterized0_97  |     4|
+|103   |    NOR37432  |nor_3_98                  |     4|
+|104   |    NOR37433  |nor_3__parameterized0_99  |     4|
+|105   |    NOR37437  |nor_3_100                 |     4|
+|106   |    NOR37438  |nor_3__parameterized0_101 |     4|
+|107   |    NOR37442  |nor_3_102                 |     4|
+|108   |    NOR37443  |nor_3__parameterized0_103 |     4|
+|109   |    NOR37447  |nor_3_104                 |     4|
+|110   |    NOR37448  |nor_3__parameterized0_105 |     4|
+|111   |    NOR37450  |nor_3_106                 |     4|
+|112   |    NOR37451  |nor_3__parameterized0_107 |     4|
+|113   |    NOR37454  |nor_3_108                 |     4|
+|114   |  agc_clk_div |agc_clock_divisor         |    11|
+|115   |  zync_ps     |zynq_ps_wrapper           |     3|
+|116   |    zynq_ps_i |zynq_ps                   |     3|
++------+--------------+--------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1878.266 ; gain = 321.918 ; free physical = 1960 ; free virtual = 7313
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4477 ; free virtual = 8701
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 1878.266 ; gain = 235.285 ; free physical = 2018 ; free virtual = 7370
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1878.273 ; gain = 321.918 ; free physical = 2032 ; free virtual = 7385
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1903.348 ; gain = 211.434 ; free physical = 4533 ; free virtual = 8757
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1903.355 ; gain = 347.035 ; free physical = 4547 ; free virtual = 8770
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1887.172 ; gain = 0.000 ; free physical = 1962 ; free virtual = 7315
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1903.355 ; gain = 0.000 ; free physical = 4479 ; free virtual = 8703
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+38 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1887.172 ; gain = 484.398 ; free physical = 2061 ; free virtual = 7414
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1887.172 ; gain = 0.000 ; free physical = 2061 ; free virtual = 7414
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 1903.355 ; gain = 499.617 ; free physical = 4575 ; free virtual = 8799
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1903.355 ; gain = 0.000 ; free physical = 4575 ; free virtual = 8799
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/rzinkstok/agc_clock/agc_clock.runs/synth_1/agc_clock.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file agc_clock_utilization_synth.rpt -pb agc_clock_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Nov 15 12:41:15 2019...
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  3 16:25:13 2020...

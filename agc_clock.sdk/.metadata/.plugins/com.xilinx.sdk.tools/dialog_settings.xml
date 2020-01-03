@@ -4,7 +4,7 @@
 	<item value="agc_clock_hw_platform_0" key="programflash.hwplatform"/>
 	<item value="Auto Detect" key="agc_clock_hw_platform_0-device"/>
 	<item value="Local" key="agc_clock_hw_platform_0-target"/>
-	<item value="/home/rzinkstok/agc_clock/agc_clock.sdk/fsbl/Debug/fsbl.elf" key="agc_clock_hw_platform_0-fsblFile"/>
+	<item value="/home/rzinkstok/agc_clock/agc_clock.sdk/HelloWorld/Debug/HelloWorld.elf" key="agc_clock_hw_platform_0-fsblFile"/>
 	<item value="/home/rzinkstok/agc_clock/agc_clock.sdk/HelloWorld/bootimage/BOOT.mcs" key="agc_clock_hw_platform_0-imgFile"/>
 	<item value="" key="agc_clock_hw_platform_0-offSet"/>
 	<item value="false" key="agc_clock_hw_platform_0-blankCheck"/>
