@@ -1,10 +1,7 @@
-AGC clock
-=========
+# AGC clock
 
 Test project for finding out how to program the Numato Styx board for using the Zynq Processing System PLL clock, and programming the QSPI flash so the
 programmed circuit sticks after disconnecting and rebooting the board.
-
-The Styx board does not have
 
 Prerequisites:
 - Xilinx Vivado 2019.1
@@ -17,14 +14,14 @@ Sources:
 - The Numato Styx website (https://numato.com/product/styx-zynq-7020-fpga-module)
 - The Numato knowledge base article on booting from flash (https://numato.com/kb/styx-boot-sd-card-qspi-flash/)
 
-Changes in the configuration of channel A of the onboard FT2232H USB – Serial device (as mentioned in the knowledge base article) is only needed if you want to see
-the output of the `helloworld.c` program through a serial port connection. Note that the knowledge base article talks about configuring channel B, which is not correct:
-the customizable channel on the Styx is channel A. The knowledge base article references another article on configuring the Saturn board, for which the customizable channel
-is channel B; this presumably explains the error.
+Changes in the configuration of channel A of the onboard FT2232H USB – Serial device (as mentioned in the knowledge base article) 
+is only needed if you want to see the output of the `helloworld.c` program through a serial port connection. Note that the knowledge 
+base article talks about configuring channel B, which is not correct: the customizable channel on the Styx is channel A. The 
+knowledge base article references another article on configuring the Saturn board, for which the customizable channel is channel B;
+this presumably explains the error.
 
 
-Linux
------
+## Linux
 
 In order to be able to access the JTAG USB device, run the following script:
 
@@ -32,7 +29,7 @@ In order to be able to access the JTAG USB device, run the following script:
 sudo /tools/Xilinx/Vivado/2019.1/data/xicom/cable_drivers/lin64/install_script/install_drivers/install_drivers
 ```
 
-Also, make sure that the virtual machine supports USB 3.0.
+Also, if working on a virtual machine, make sure USB 3.0 support is enabled.
 
 Check that the device is properly recognized:
 - Set the Styx boot mode to boot from JTAG (jumper JP1 only between 1 and 2)
@@ -42,8 +39,7 @@ Check that the device is properly recognized:
 - The permissions on `/dev/bus/usb/<bus number>/<device number>` should be `666`.
 
 
-Programming
------------
+## Programming
 
 - After generating the bitstream, export the hardware using `File - Export - Export Hardware...`.
 - At this point, you can use the Hardware Manager to program the device directly. This will work but the program is lost
@@ -79,12 +75,12 @@ Programming
 - Power the board: the clock should be running on one of the output pins (see the constraints file)
 
 
-Reprogramming
--------------
+## Reprogramming
 
 - After generating the bitstream, export the hardware using `File - Export - Export Hardware...`.
 - Select `Include bitstream` and `Local to project`, then click OK; overwrite if asked.
 - Launch the SDK
+- Select `Project - Clean...`, set to `Clean all projects` and click OK
 - Select the `HelloWorld` project
 - Select `Xilinx - Create Boot Image`
 - Select `Import from existing BIF file` and set `...\agc_clock.sdk\HelloWorld\bootimage\HelloWorld.bif` as `Import BIF file path`
