@@ -3,417 +3,386 @@
     with args -log agc_clock.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source agc_clock.tcl
 
 
-****** Vivado v2019.1 (64-bit)
-  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
-  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source agc_clock.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.1/data/ip'.
 Command: synth_design -top agc_clock -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Device 21-403] Loading part xc7z020clg484-1
-INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11625 
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3352
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1710.027 ; gain = 153.715 ; free physical = 4638 ; free virtual = 8831
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2046.145 ; gain = 379.738 ; free physical = 9585 ; free virtual = 13636
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'agc_clock' [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/agc_clock.v:3]
-INFO: [Synth 8-6157] synthesizing module 'prop_clock_divisor' [/home/rzinkstok/agc_clock/agc_clock.runs/synth_1/.Xil/Vivado-11584-fpgadev/realtime/prop_clock_divisor_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'prop_clock_divisor' (1#1) [/home/rzinkstok/agc_clock/agc_clock.runs/synth_1/.Xil/Vivado-11584-fpgadev/realtime/prop_clock_divisor_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'agc_clock_divisor' [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/agc_clock_divisor.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'agc_clock_divisor' (2#1) [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/agc_clock_divisor.v:3]
-INFO: [Synth 8-6157] synthesizing module 'a02_timer' [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/a02_timer.v:3]
-INFO: [Synth 8-6157] synthesizing module 'nor_3' [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/nor_3.v:3]
+INFO: [Synth 8-6157] synthesizing module 'agc_clock' [/home/rzinkstok/development/agc_clock/agc_clock.srcs/sources_1/new/agc_clock.v:3]
+INFO: [Synth 8-6157] synthesizing module 'prop_clock_divisor' [/home/rzinkstok/development/agc_clock/agc_clock.runs/synth_1/.Xil/Vivado-3325-claudio/realtime/prop_clock_divisor_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'prop_clock_divisor' (0#1) [/home/rzinkstok/development/agc_clock/agc_clock.runs/synth_1/.Xil/Vivado-3325-claudio/realtime/prop_clock_divisor_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'agc_clock_divisor' [/home/rzinkstok/development/agc_clock/agc_clock.srcs/sources_1/new/agc_clock_divisor.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'agc_clock_divisor' (0#1) [/home/rzinkstok/development/agc_clock/agc_clock.srcs/sources_1/new/agc_clock_divisor.v:3]
+INFO: [Synth 8-6157] synthesizing module 'a02_timer' [/home/rzinkstok/development/agc_clock/agc_clock.srcs/sources_1/new/a02_timer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'nor_3' [/home/rzinkstok/development/agc_clock/agc_clock.srcs/sources_1/new/nor_3.v:3]
 	Parameter iv bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'nor_3' (3#1) [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/nor_3.v:3]
-INFO: [Synth 8-6157] synthesizing module 'nor_3__parameterized0' [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/nor_3.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'nor_3' (0#1) [/home/rzinkstok/development/agc_clock/agc_clock.srcs/sources_1/new/nor_3.v:3]
+INFO: [Synth 8-6157] synthesizing module 'nor_3__parameterized0' [/home/rzinkstok/development/agc_clock/agc_clock.srcs/sources_1/new/nor_3.v:3]
 	Parameter iv bound to: 1'b1 
-INFO: [Synth 8-6155] done synthesizing module 'nor_3__parameterized0' (3#1) [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/nor_3.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'a02_timer' (4#1) [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/a02_timer.v:3]
-INFO: [Synth 8-6157] synthesizing module 'zynq_ps_wrapper' [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/hdl/zynq_ps_wrapper.v:12]
-INFO: [Synth 8-6157] synthesizing module 'zynq_ps' [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/synth/zynq_ps.v:13]
-INFO: [Synth 8-6157] synthesizing module 'zynq_ps_processing_system7_0_0' [/home/rzinkstok/agc_clock/agc_clock.runs/synth_1/.Xil/Vivado-11584-fpgadev/realtime/zynq_ps_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'zynq_ps_processing_system7_0_0' (5#1) [/home/rzinkstok/agc_clock/agc_clock.runs/synth_1/.Xil/Vivado-11584-fpgadev/realtime/zynq_ps_processing_system7_0_0_stub.v:6]
-WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'zynq_ps_processing_system7_0_0' has 25 connections declared, but only 22 given [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/synth/zynq_ps.v:79]
-INFO: [Synth 8-6155] done synthesizing module 'zynq_ps' (6#1) [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/synth/zynq_ps.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'zynq_ps_wrapper' (7#1) [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/hdl/zynq_ps_wrapper.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'agc_clock' (8#1) [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/new/agc_clock.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'nor_3__parameterized0' (0#1) [/home/rzinkstok/development/agc_clock/agc_clock.srcs/sources_1/new/nor_3.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'a02_timer' (0#1) [/home/rzinkstok/development/agc_clock/agc_clock.srcs/sources_1/new/a02_timer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'zynq_ps_wrapper' [/home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/hdl/zynq_ps_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'zynq_ps' [/home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/synth/zynq_ps.v:13]
+INFO: [Synth 8-6157] synthesizing module 'zynq_ps_processing_system7_0_0' [/home/rzinkstok/development/agc_clock/agc_clock.runs/synth_1/.Xil/Vivado-3325-claudio/realtime/zynq_ps_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'zynq_ps_processing_system7_0_0' (0#1) [/home/rzinkstok/development/agc_clock/agc_clock.runs/synth_1/.Xil/Vivado-3325-claudio/realtime/zynq_ps_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'UART0_TX' of module 'zynq_ps_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/synth/zynq_ps.v:80]
+WARNING: [Synth 8-7071] port 'FCLK_CLK0' of module 'zynq_ps_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/synth/zynq_ps.v:80]
+WARNING: [Synth 8-7071] port 'FCLK_RESET0_N' of module 'zynq_ps_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [/home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/synth/zynq_ps.v:80]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'zynq_ps_processing_system7_0_0' has 25 connections declared, but only 22 given [/home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/synth/zynq_ps.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'zynq_ps' (0#1) [/home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/synth/zynq_ps.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'zynq_ps_wrapper' (0#1) [/home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/hdl/zynq_ps_wrapper.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'agc_clock' (0#1) [/home/rzinkstok/development/agc_clock/agc_clock.srcs/sources_1/new/agc_clock.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1764.777 ; gain = 208.465 ; free physical = 4680 ; free virtual = 8874
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2112.113 ; gain = 445.707 ; free physical = 9496 ; free virtual = 13548
 ---------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1767.746 ; gain = 211.434 ; free physical = 4678 ; free virtual = 8873
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2123.988 ; gain = 457.582 ; free physical = 9495 ; free virtual = 13546
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1767.746 ; gain = 211.434 ; free physical = 4678 ; free virtual = 8873
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2123.988 ; gain = 457.582 ; free physical = 9495 ; free virtual = 13546
 ---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2123.988 ; gain = 0.000 ; free physical = 9495 ; free virtual = 13546
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc] for cell 'zync_ps/zynq_ps_i/processing_system7_0'
-Finished Parsing XDC File [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc] for cell 'zync_ps/zynq_ps_i/processing_system7_0'
-Parsing XDC File [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/ip/prop_clock_divisor/prop_clock_divisor/prop_clock_divisor_in_context.xdc] for cell 'prop_clk_div'
-Finished Parsing XDC File [/home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/ip/prop_clock_divisor/prop_clock_divisor/prop_clock_divisor_in_context.xdc] for cell 'prop_clk_div'
-Parsing XDC File [/home/rzinkstok/agc_clock/agc_clock.srcs/constrs_1/new/agc_clock.xdc]
-Finished Parsing XDC File [/home/rzinkstok/agc_clock/agc_clock.srcs/constrs_1/new/agc_clock.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/rzinkstok/agc_clock/agc_clock.srcs/constrs_1/new/agc_clock.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/agc_clock_propImpl.xdc].
+Parsing XDC File [/home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc] for cell 'zync_ps/zynq_ps_i/processing_system7_0'
+Finished Parsing XDC File [/home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc] for cell 'zync_ps/zynq_ps_i/processing_system7_0'
+Parsing XDC File [/home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/ip/prop_clock_divisor/prop_clock_divisor/prop_clock_divisor_in_context.xdc] for cell 'prop_clk_div'
+Finished Parsing XDC File [/home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/ip/prop_clock_divisor/prop_clock_divisor/prop_clock_divisor_in_context.xdc] for cell 'prop_clk_div'
+Parsing XDC File [/home/rzinkstok/development/agc_clock/agc_clock.srcs/constrs_1/new/agc_clock.xdc]
+Finished Parsing XDC File [/home/rzinkstok/development/agc_clock/agc_clock.srcs/constrs_1/new/agc_clock.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/rzinkstok/development/agc_clock/agc_clock.srcs/constrs_1/new/agc_clock.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/agc_clock_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/agc_clock_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [/home/rzinkstok/agc_clock/agc_clock.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/rzinkstok/agc_clock/agc_clock.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [/home/rzinkstok/development/agc_clock/agc_clock.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/rzinkstok/development/agc_clock/agc_clock.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1903.348 ; gain = 0.000 ; free physical = 4562 ; free virtual = 8773
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2264.738 ; gain = 0.000 ; free physical = 9483 ; free virtual = 13534
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1903.348 ; gain = 0.000 ; free physical = 4562 ; free virtual = 8773
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2264.738 ; gain = 0.000 ; free physical = 9483 ; free virtual = 13534
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4636 ; free virtual = 8847
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2264.738 ; gain = 598.332 ; free physical = 9477 ; free virtual = 13530
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4636 ; free virtual = 8847
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2264.738 ; gain = 598.332 ; free physical = 9477 ; free virtual = 13530
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 2).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 3).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 5).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 6).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 7).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 8).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 9).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 10).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 11).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 12).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 13).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 14).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 15).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 16).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 17).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 18).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 19).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 20).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 21).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 22).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 23).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 24).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 25).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 26).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 27).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 28).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 29).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 30).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 31).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 32).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 33).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 34).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 35).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 36).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 37).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 38).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 39).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 40).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 41).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 42).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 43).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 44).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 45).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 46).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 47).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 48).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 49).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 50).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 51).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 52).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 53).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 54).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 55).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 56).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 57).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 58).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 59).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 60).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 61).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 62).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 63).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 64).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 65).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 66).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 67).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 68).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 69).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 70).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 71).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 72).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 73).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 74).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 75).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 76).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 77).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 78).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 79).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 80).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 81).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 82).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 83).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 84).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 85).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 86).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 87).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 88).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 89).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 90).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 91).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 92).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 93).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 94).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 95).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 96).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 97).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 98).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 99).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 100).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 101).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 102).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 103).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 104).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 105).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 106).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 107).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 108).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 109).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 110).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 111).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 112).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 113).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 114).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 115).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 116).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 117).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 118).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 119).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 120).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 121).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 122).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 123).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 124).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 125).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 126).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 127).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 128).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 129).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 130).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 131).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 132).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 133).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 134).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 135).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 136).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 137).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 138).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 139).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 140).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 141).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 142).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 143).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 144).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 145).
-Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 146).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 147).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 148).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 149).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 150).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 151).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 152).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 153).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 154).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 155).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 156).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 157).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 158).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 159).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 160).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 161).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 162).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 163).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 164).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 165).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 166).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 167).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 168).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 169).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 170).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 171).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 172).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 173).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 174).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 175).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 176).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 177).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 178).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 179).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 180).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 181).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 182).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 183).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 184).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 185).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 186).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 187).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 188).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 189).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 190).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 191).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 192).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 193).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 194).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 195).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 196).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 197).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 198).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 199).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 200).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 201).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 202).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 203).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 204).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 205).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 206).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 207).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 208).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 209).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 210).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 211).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 212).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 213).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 214).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 215).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 216).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 217).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 218).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 219).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 220).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 221).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 222).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 223).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 224).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 225).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 226).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 227).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 228).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 229).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 230).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 231).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 232).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 233).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 234).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 235).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 236).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 237).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 238).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 239).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 240).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 241).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 242).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 243).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 244).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 245).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 246).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 247).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 248).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 249).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 250).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 251).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 252).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 253).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 254).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 255).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 256).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 257).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 258).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 259).
-Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 260).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 261).
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/ip/prop_clock_divisor/prop_clock_divisor/prop_clock_divisor_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  /home/rzinkstok/agc_clock/agc_clock.srcs/sources_1/ip/prop_clock_divisor/prop_clock_divisor/prop_clock_divisor_in_context.xdc, line 4).
-Applied set_property DONT_TOUCH = true for zync_ps/zynq_ps_i. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for zync_ps/zynq_ps_i/processing_system7_0. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for prop_clk_div. (constraint file  auto generated constraint, line ).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 98).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 99).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 100).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 101).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 102).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 103).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 104).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 105).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 106).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 107).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 108).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 109).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 110).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 111).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 112).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 113).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 114).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 115).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 116).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 117).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 118).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 119).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 120).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 121).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 122).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 123).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 124).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 125).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 126).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 127).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 128).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 129).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 130).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 131).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 132).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 133).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 134).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 135).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 136).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 137).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 138).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 139).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 140).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 141).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 142).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 143).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 144).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 145).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 146).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 147).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 148).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 149).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 150).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 151).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 152).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 153).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 154).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 155).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 156).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 157).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 158).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 159).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 160).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 161).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 162).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 163).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 164).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 165).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 166).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 167).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 168).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 169).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 170).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 171).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 172).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 173).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 174).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 175).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 176).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 177).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 178).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 179).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 180).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 181).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 182).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 183).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 184).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 185).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 186).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 187).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 188).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 189).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 190).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 191).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 192).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 193).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 194).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 195).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 196).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 197).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 198).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 199).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 200).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 201).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 202).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 203).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 204).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 205).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 206).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 207).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 208).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 209).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 210).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 211).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 212).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 213).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 214).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 215).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 216).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 217).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 218).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 219).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 220).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 221).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 222).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 223).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 224).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 225).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 226).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 227).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 228).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 229).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 230).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 231).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 232).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 233).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 234).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 235).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 236).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 237).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 238).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 239).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 240).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 241).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 242).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 243).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 244).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 245).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 246).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 247).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 248).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 249).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 250).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 251).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 252).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 253).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 254).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 255).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 256).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 257).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 258).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 259).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 260).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/bd/zynq_ps/ip/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0/zynq_ps_processing_system7_0_0_in_context.xdc, line 261).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/ip/prop_clock_divisor/prop_clock_divisor/prop_clock_divisor_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  /home/rzinkstok/development/agc_clock/agc_clock.gen/sources_1/ip/prop_clock_divisor/prop_clock_divisor/prop_clock_divisor_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for zync_ps/zynq_ps_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for zync_ps/zynq_ps_i/processing_system7_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for prop_clk_div. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4636 ; free virtual = 8847
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2264.738 ; gain = 598.332 ; free physical = 9477 ; free virtual = 13530
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4627 ; free virtual = 8839
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2264.738 ; gain = 598.332 ; free physical = 9474 ; free virtual = 13527
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'a02/NOR37131' (nor_3) to 'a02/NOR37135'
 INFO: [Synth 8-223] decloning instance 'a02/NOR37454' (nor_3) to 'a02/NOR34329'
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      6 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
 +---Registers : 
 	                6 Bit    Registers := 1     
 	                1 Bit    Registers := 543   
 +---Muxes : 
-	   2 Input      6 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 49    
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 49    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start RTL Hierarchical Component Statistics 
----------------------------------------------------------------------------------
-Hierarchical RTL Component report 
-Module agc_clock_divisor 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      6 Bit       Adders := 1     
-+---Registers : 
-	                6 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input      6 Bit        Muxes := 1     
-Module nor_3 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 3     
-Module nor_3__parameterized0 
-Detailed RTL Component Info : 
-+---Registers : 
-	                1 Bit    Registers := 3     
-+---Muxes : 
-	   2 Input      1 Bit        Muxes := 1     
----------------------------------------------------------------------------------
-Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Part Resource Summary
@@ -427,51 +396,28 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\a02/NOR37227/next_val_reg )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\agc_clk_div/counter_reg[5] )
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4611 ; free virtual = 8828
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2264.738 ; gain = 598.332 ; free physical = 9454 ; free virtual = 13513
 ---------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5578] Moved timing constraint from pin 'zync_ps/zynq_ps_i/processing_system7_0/FCLK_CLK0' to pin 'zync_ps/zynq_ps_i/processing_system7_0/bbstub_FCLK_CLK0/O'
-INFO: [Synth 8-5578] Moved timing constraint from pin 'prop_clk_div/clk_out1' to pin 'prop_clk_div/bbstub_clk_out1/O'
-INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4482 ; free virtual = 8706
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2264.738 ; gain = 598.332 ; free physical = 9453 ; free virtual = 13512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4478 ; free virtual = 8701
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2264.738 ; gain = 598.332 ; free physical = 9453 ; free virtual = 13512
 ---------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4478 ; free virtual = 8701
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2264.738 ; gain = 598.332 ; free physical = 9453 ; free virtual = 13512
 ---------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -488,50 +434,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4478 ; free virtual = 8701
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2264.738 ; gain = 598.332 ; free physical = 9451 ; free virtual = 13510
 ---------------------------------------------------------------------------------
-
-Report Check Netlist: 
-+------+------------------+-------+---------+-------+------------------+
-|      |Item              |Errors |Warnings |Status |Description       |
-+------+------------------+-------+---------+-------+------------------+
-|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
-+------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4478 ; free virtual = 8701
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2264.738 ; gain = 598.332 ; free physical = 9451 ; free virtual = 13510
 ---------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4478 ; free virtual = 8701
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2264.738 ; gain = 598.332 ; free physical = 9451 ; free virtual = 13510
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4478 ; free virtual = 8701
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2264.738 ; gain = 598.332 ; free physical = 9451 ; free virtual = 13510
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4478 ; free virtual = 8701
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2264.738 ; gain = 598.332 ; free physical = 9451 ; free virtual = 13510
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4478 ; free virtual = 8701
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2264.738 ; gain = 598.332 ; free physical = 9451 ; free virtual = 13510
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -546,163 +479,42 @@ Report BlackBoxes:
 +------+-------------------------------+----------+
 
 Report Cell Usage: 
-+------+-------------------------------+------+
-|      |Cell                           |Count |
-+------+-------------------------------+------+
-|1     |prop_clock_divisor             |     1|
-|2     |zynq_ps_processing_system7_0_0 |     1|
-|3     |LUT2                           |     2|
-|4     |LUT3                           |    40|
-|5     |LUT4                           |    52|
-|6     |LUT5                           |    20|
-|7     |LUT6                           |     4|
-|8     |FDCE                           |   233|
-|9     |FDPE                           |   105|
-|10    |IBUF                           |     1|
-|11    |OBUF                           |    16|
-+------+-------------------------------+------+
-
-Report Instance Areas: 
-+------+--------------+--------------------------+------+
-|      |Instance      |Module                    |Cells |
-+------+--------------+--------------------------+------+
-|1     |top           |                          |   478|
-|2     |  a02         |a02_timer                 |   445|
-|3     |    NOR37101  |nor_3                     |     4|
-|4     |    NOR37102  |nor_3_0                   |     4|
-|5     |    NOR37103  |nor_3__parameterized0     |     4|
-|6     |    NOR37104  |nor_3_1                   |     4|
-|7     |    NOR37105  |nor_3__parameterized0_2   |     4|
-|8     |    NOR37106  |nor_3_3                   |     4|
-|9     |    NOR37107  |nor_3__parameterized0_4   |     4|
-|10    |    NOR37111  |nor_3_5                   |     4|
-|11    |    NOR37112  |nor_3_6                   |     4|
-|12    |    NOR37113  |nor_3__parameterized0_7   |     4|
-|13    |    NOR37114  |nor_3_8                   |     4|
-|14    |    NOR37115  |nor_3__parameterized0_9   |     4|
-|15    |    NOR37117  |nor_3__parameterized0_10  |     4|
-|16    |    NOR37118  |nor_3_11                  |     4|
-|17    |    NOR37119  |nor_3__parameterized0_12  |     4|
-|18    |    NOR37121  |nor_3_13                  |     4|
-|19    |    NOR37122  |nor_3_14                  |     4|
-|20    |    NOR37125  |nor_3_15                  |     4|
-|21    |    NOR37126  |nor_3_16                  |     4|
-|22    |    NOR37130  |nor_3_17                  |     4|
-|23    |    NOR37131  |nor_3_18                  |     4|
-|24    |    NOR37137  |nor_3_19                  |     4|
-|25    |    NOR37232  |nor_3_20                  |     4|
-|26    |    NOR37233  |nor_3_21                  |     4|
-|27    |    NOR37234  |nor_3__parameterized0_22  |     4|
-|28    |    NOR37235  |nor_3_23                  |     4|
-|29    |    NOR37236  |nor_3_24                  |     4|
-|30    |    NOR37237  |nor_3_25                  |     4|
-|31    |    NOR37238  |nor_3_26                  |     4|
-|32    |    NOR37239  |nor_3__parameterized0_27  |     4|
-|33    |    NOR37240  |nor_3_28                  |     4|
-|34    |    NOR37241  |nor_3_29                  |     4|
-|35    |    NOR37242  |nor_3_30                  |     4|
-|36    |    NOR37243  |nor_3__parameterized0_31  |     4|
-|37    |    NOR37245  |nor_3__parameterized0_32  |     4|
-|38    |    NOR37301  |nor_3_33                  |     4|
-|39    |    NOR37302  |nor_3__parameterized0_34  |     4|
-|40    |    NOR37303  |nor_3_35                  |     4|
-|41    |    NOR37304  |nor_3_36                  |     4|
-|42    |    NOR37305  |nor_3__parameterized0_37  |     4|
-|43    |    NOR37306  |nor_3_38                  |     4|
-|44    |    NOR37307  |nor_3_39                  |     4|
-|45    |    NOR37308  |nor_3_40                  |     4|
-|46    |    NOR37309  |nor_3__parameterized0_41  |     4|
-|47    |    NOR37310  |nor_3_42                  |     4|
-|48    |    NOR37311  |nor_3_43                  |     4|
-|49    |    NOR37312  |nor_3_44                  |     4|
-|50    |    NOR37313  |nor_3__parameterized0_45  |     4|
-|51    |    NOR37314  |nor_3_46                  |     4|
-|52    |    NOR37315  |nor_3_47                  |     4|
-|53    |    NOR37316  |nor_3_48                  |     4|
-|54    |    NOR37317  |nor_3__parameterized0_49  |     4|
-|55    |    NOR37318  |nor_3_50                  |     4|
-|56    |    NOR37319  |nor_3_51                  |     4|
-|57    |    NOR37320  |nor_3_52                  |     4|
-|58    |    NOR37321  |nor_3__parameterized0_53  |     4|
-|59    |    NOR37322  |nor_3_54                  |     4|
-|60    |    NOR37323  |nor_3_55                  |     4|
-|61    |    NOR37325  |nor_3_56                  |     4|
-|62    |    NOR37326  |nor_3__parameterized0_57  |     4|
-|63    |    NOR37327  |nor_3_58                  |     4|
-|64    |    NOR37328  |nor_3_59                  |     4|
-|65    |    NOR37329  |nor_3_60                  |     4|
-|66    |    NOR37330  |nor_3__parameterized0_61  |     4|
-|67    |    NOR37331  |nor_3_62                  |     4|
-|68    |    NOR37332  |nor_3_63                  |     4|
-|69    |    NOR37333  |nor_3_64                  |     4|
-|70    |    NOR37334  |nor_3__parameterized0_65  |     4|
-|71    |    NOR37335  |nor_3_66                  |     4|
-|72    |    NOR37336  |nor_3_67                  |     4|
-|73    |    NOR37337  |nor_3_68                  |     4|
-|74    |    NOR37338  |nor_3__parameterized0_69  |     4|
-|75    |    NOR37339  |nor_3_70                  |     4|
-|76    |    NOR37340  |nor_3_71                  |     4|
-|77    |    NOR37341  |nor_3_72                  |     4|
-|78    |    NOR37342  |nor_3__parameterized0_73  |     4|
-|79    |    NOR37343  |nor_3_74                  |     4|
-|80    |    NOR37344  |nor_3_75                  |     4|
-|81    |    NOR37345  |nor_3_76                  |     4|
-|82    |    NOR37346  |nor_3_77                  |     4|
-|83    |    NOR37347  |nor_3__parameterized0_78  |     4|
-|84    |    NOR37348  |nor_3_79                  |     4|
-|85    |    NOR37349  |nor_3_80                  |     4|
-|86    |    NOR37355  |nor_3_81                  |     4|
-|87    |    NOR37356  |nor_3_82                  |     5|
-|88    |    NOR37357  |nor_3_83                  |     4|
-|89    |    NOR37358  |nor_3_84                  |     4|
-|90    |    NOR37401  |nor_3__parameterized0_85  |     4|
-|91    |    NOR37404  |nor_3_86                  |     4|
-|92    |    NOR37405  |nor_3__parameterized0_87  |     4|
-|93    |    NOR37407  |nor_3_88                  |     4|
-|94    |    NOR37408  |nor_3__parameterized0_89  |     4|
-|95    |    NOR37411  |nor_3_90                  |     4|
-|96    |    NOR37412  |nor_3__parameterized0_91  |     4|
-|97    |    NOR37415  |nor_3_92                  |     4|
-|98    |    NOR37416  |nor_3__parameterized0_93  |     4|
-|99    |    NOR37422  |nor_3_94                  |     4|
-|100   |    NOR37423  |nor_3__parameterized0_95  |     4|
-|101   |    NOR37427  |nor_3_96                  |     4|
-|102   |    NOR37428  |nor_3__parameterized0_97  |     4|
-|103   |    NOR37432  |nor_3_98                  |     4|
-|104   |    NOR37433  |nor_3__parameterized0_99  |     4|
-|105   |    NOR37437  |nor_3_100                 |     4|
-|106   |    NOR37438  |nor_3__parameterized0_101 |     4|
-|107   |    NOR37442  |nor_3_102                 |     4|
-|108   |    NOR37443  |nor_3__parameterized0_103 |     4|
-|109   |    NOR37447  |nor_3_104                 |     4|
-|110   |    NOR37448  |nor_3__parameterized0_105 |     4|
-|111   |    NOR37450  |nor_3_106                 |     4|
-|112   |    NOR37451  |nor_3__parameterized0_107 |     4|
-|113   |    NOR37454  |nor_3_108                 |     4|
-|114   |  agc_clk_div |agc_clock_divisor         |    11|
-|115   |  zync_ps     |zynq_ps_wrapper           |     3|
-|116   |    zynq_ps_i |zynq_ps                   |     3|
-+------+--------------+--------------------------+------+
++------+-----------------------------+------+
+|      |Cell                         |Count |
++------+-----------------------------+------+
+|1     |prop_clock_divisor           |     1|
+|2     |zynq_ps_processing_system7_0 |     1|
+|3     |LUT2                         |     2|
+|4     |LUT3                         |    40|
+|5     |LUT4                         |    52|
+|6     |LUT5                         |    20|
+|7     |LUT6                         |     4|
+|8     |FDCE                         |   233|
+|9     |FDPE                         |   105|
+|10    |IBUF                         |     1|
+|11    |OBUF                         |    16|
++------+-----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1903.348 ; gain = 347.035 ; free physical = 4477 ; free virtual = 8701
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2264.738 ; gain = 598.332 ; free physical = 9451 ; free virtual = 13510
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1903.348 ; gain = 211.434 ; free physical = 4533 ; free virtual = 8757
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1903.355 ; gain = 347.035 ; free physical = 4547 ; free virtual = 8770
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2264.738 ; gain = 457.582 ; free physical = 9451 ; free virtual = 13510
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2264.738 ; gain = 598.332 ; free physical = 9451 ; free virtual = 13510
 INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2264.738 ; gain = 0.000 ; free physical = 9668 ; free virtual = 13728
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1903.355 ; gain = 0.000 ; free physical = 4479 ; free virtual = 8703
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2264.738 ; gain = 0.000 ; free physical = 9731 ; free virtual = 13790
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
+Synth Design complete | Checksum: 68268a18
 INFO: [Common 17-83] Releasing license: Synthesis
-38 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+36 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 1903.355 ; gain = 499.617 ; free physical = 4575 ; free virtual = 8799
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1903.355 ; gain = 0.000 ; free physical = 4575 ; free virtual = 8799
-WARNING: [Constraints 18-5210] No constraints selected for write.
-Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/rzinkstok/agc_clock/agc_clock.runs/synth_1/agc_clock.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2264.738 ; gain = 944.895 ; free physical = 9731 ; free virtual = 13790
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1793.827; main = 1488.295; forked = 374.828
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3236.172; main = 2264.742; forked = 1003.445
+INFO: [Common 17-1381] The checkpoint '/home/rzinkstok/development/agc_clock/agc_clock.runs/synth_1/agc_clock.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file agc_clock_utilization_synth.rpt -pb agc_clock_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Jan  3 16:25:13 2020...
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 28 19:33:23 2023...

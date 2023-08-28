@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Aug 28 19:33:40 2023
+# Process ID: 3579
+# Current directory: /home/rzinkstok/development/agc_clock/agc_clock.runs/impl_1
+# Command line: vivado -log agc_clock.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source agc_clock.tcl -notrace
+# Log file: /home/rzinkstok/development/agc_clock/agc_clock.runs/impl_1/agc_clock.vdi
+# Journal file: /home/rzinkstok/development/agc_clock/agc_clock.runs/impl_1/vivado.jou
+# Running On: claudio, OS: Linux, CPU Frequency: 4593.536 MHz, CPU Physical cores: 8, Host memory: 16526 MB
+#-----------------------------------------------------------
+source agc_clock.tcl -notrace

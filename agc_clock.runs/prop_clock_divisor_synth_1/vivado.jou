@@ -1,12 +1,14 @@
 #-----------------------------------------------------------
-# Vivado v2019.1 (64-bit)
-# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
-# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Sep 30 23:03:22 2019
-# Process ID: 3148
-# Current directory: C:/Users/rzinkstok/agc_clock/agc_clock.runs/prop_clock_divisor_synth_1
-# Command line: vivado.exe -log prop_clock_divisor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source prop_clock_divisor.tcl
-# Log file: C:/Users/rzinkstok/agc_clock/agc_clock.runs/prop_clock_divisor_synth_1/prop_clock_divisor.vds
-# Journal file: C:/Users/rzinkstok/agc_clock/agc_clock.runs/prop_clock_divisor_synth_1\vivado.jou
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Mon Aug 28 19:32:21 2023
+# Process ID: 3014
+# Current directory: /home/rzinkstok/development/agc_clock/agc_clock.runs/prop_clock_divisor_synth_1
+# Command line: vivado -log prop_clock_divisor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source prop_clock_divisor.tcl
+# Log file: /home/rzinkstok/development/agc_clock/agc_clock.runs/prop_clock_divisor_synth_1/prop_clock_divisor.vds
+# Journal file: /home/rzinkstok/development/agc_clock/agc_clock.runs/prop_clock_divisor_synth_1/vivado.jou
+# Running On: claudio, OS: Linux, CPU Frequency: 4346.837 MHz, CPU Physical cores: 8, Host memory: 16526 MB
 #-----------------------------------------------------------
 source prop_clock_divisor.tcl -notrace

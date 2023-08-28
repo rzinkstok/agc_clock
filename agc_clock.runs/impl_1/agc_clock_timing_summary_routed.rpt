@@ -1,12 +1,13 @@
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Fri Jan  3 16:26:43 2020
-| Host         : fpgadev running 64-bit Ubuntu 18.04.3 LTS
+| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date         : Mon Aug 28 19:34:21 2023
+| Host         : claudio running 64-bit Ubuntu 22.04.3 LTS
 | Command      : report_timing_summary -max_paths 10 -file agc_clock_timing_summary_routed.rpt -pb agc_clock_timing_summary_routed.pb -rpx agc_clock_timing_summary_routed.rpx -warn_on_violation
 | Design       : agc_clock
 | Device       : 7z020-clg484
-| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Timing Summary Report
@@ -25,6 +26,7 @@ Timing Summary Report
   Ignore I/O Paths                           :  No
   Timing Early Launch at Borrowing Latches   :  No
   Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
 
   Corner  Analyze    Analyze    
   Name    Max Paths  Min Paths  
@@ -33,55 +35,63 @@ Timing Summary Report
   Fast    Yes        Yes        
 
 
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
 
 check_timing report
 
 Table of Contents
 -----------------
-1. checking no_clock
-2. checking constant_clock
-3. checking pulse_width_clock
-4. checking unconstrained_internal_endpoints
-5. checking no_input_delay
-6. checking no_output_delay
-7. checking multiple_clock
-8. checking generated_clocks
-9. checking loops
-10. checking partial_input_delay
-11. checking partial_output_delay
-12. checking latch_loops
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (1)
+6. checking no_output_delay (14)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
 
-1. checking no_clock
---------------------
+1. checking no_clock (0)
+------------------------
  There are 0 register/latch pins with no clock.
 
 
-2. checking constant_clock
---------------------------
+2. checking constant_clock (0)
+------------------------------
  There are 0 register/latch pins with constant_clock.
 
 
-3. checking pulse_width_clock
------------------------------
+3. checking pulse_width_clock (0)
+---------------------------------
  There are 0 register/latch pins which need pulse_width check
 
 
-4. checking unconstrained_internal_endpoints
---------------------------------------------
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
  There are 0 pins that are not constrained for maximum delay.
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
 
-5. checking no_input_delay
---------------------------
+5. checking no_input_delay (1)
+------------------------------
  There is 1 input port with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 
 
-6. checking no_output_delay
----------------------------
+6. checking no_output_delay (14)
+--------------------------------
  There are 14 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
@@ -89,33 +99,33 @@ Table of Contents
  There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
 
 
-7. checking multiple_clock
---------------------------
+7. checking multiple_clock (0)
+------------------------------
  There are 0 register/latch pins with multiple clocks.
 
 
-8. checking generated_clocks
-----------------------------
+8. checking generated_clocks (0)
+--------------------------------
  There are 0 generated clocks that are not connected to a clock source.
 
 
-9. checking loops
------------------
+9. checking loops (0)
+---------------------
  There are 0 combinational loops in the design.
 
 
-10. checking partial_input_delay
---------------------------------
+10. checking partial_input_delay (0)
+------------------------------------
  There are 0 input ports with partial input delay specified.
 
 
-11. checking partial_output_delay
----------------------------------
+11. checking partial_output_delay (0)
+-------------------------------------
  There are 0 ports with partial output delay specified.
 
 
-12. checking latch_loops
-------------------------
+12. checking latch_loops (0)
+----------------------------
  There are 0 combinational latch loops in the design through latch input
 
 
@@ -127,7 +137,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      7.469        0.000                      0                  338        0.186        0.000                      0                  338        3.000        0.000                       0                   344  
+      7.439        0.000                      0                  338        0.186        0.000                      0                  338        3.000        0.000                       0                   344  
 
 
 All user specified timing constraints are met.
@@ -154,7 +164,7 @@ clk_fpga_0                     {0.000 5.000}      10.000          100.000
 Clock                              WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----                              -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
 clk                                                                                                                                                                              3.000        0.000                       0                     1  
-  clk_out1_prop_clock_divisor        7.469        0.000                      0                  338        0.186        0.000                      0                  338        9.266        0.000                       0                   340  
+  clk_out1_prop_clock_divisor        7.439        0.000                      0                  338        0.186        0.000                      0                  338        9.266        0.000                       0                   340  
   clkfbout_prop_clock_divisor                                                                                                                                                   47.845        0.000                       0                     3  
 
 
@@ -213,7 +223,7 @@ High Pulse Width  Fast    MMCME2_ADV/CLKIN1  n/a            2.000         5.000 
 From Clock:  clk_out1_prop_clock_divisor
   To Clock:  clk_out1_prop_clock_divisor
 
-Setup :            0  Failing Endpoints,  Worst Slack        7.469ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        7.439ns,  Total Violation        0.000ns
 Hold  :            0  Failing Endpoints,  Worst Slack        0.186ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        9.266ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
@@ -221,19 +231,19 @@ PW    :            0  Failing Endpoints,  Worst Slack        9.266ns,  Total Vio
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             7.469ns  (required time - arrival time)
-  Source:                 a02/NOR37358/y_reg/C
+Slack (MET) :             7.439ns  (required time - arrival time)
+  Source:                 a02/NOR37355/y_reg/C
                             (rising edge-triggered cell FDCE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
   Destination:            a02/NOR37302/next_val_reg/D
                             (falling edge-triggered cell FDPE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
   Path Group:             clk_out1_prop_clock_divisor
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            9.766ns  (clk_out1_prop_clock_divisor fall@9.766ns - clk_out1_prop_clock_divisor rise@0.000ns)
-  Data Path Delay:        2.118ns  (logic 0.842ns (39.755%)  route 1.276ns (60.245%))
+  Data Path Delay:        2.150ns  (logic 0.842ns (39.165%)  route 1.308ns (60.835%))
   Logic Levels:           2  (LUT3=1 LUT6=1)
-  Clock Path Skew:        -0.067ns (DCD - SCD + CPR)
+  Clock Path Skew:        -0.065ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    -1.231ns = ( 8.535 - 9.766 ) 
-    Source Clock Delay      (SCD):    -0.570ns
+    Source Clock Delay      (SCD):    -0.572ns
     Clock Pessimism Removal (CPR):    0.594ns
   Clock Uncertainty:      0.144ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -252,15 +262,15 @@ Slack (MET) :             7.469ns  (required time - arrival time)
                                                      -7.343    -4.574 r  prop_clk_div/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.855    -2.719    prop_clk_div/inst/clk_out1_prop_clock_divisor
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.618 r  prop_clk_div/inst/clkout1_buf/O
-                         net (fo=339, routed)         2.048    -0.570    a02/NOR37358/clk_out1
-    SLICE_X111Y119       FDCE                                         r  a02/NOR37358/y_reg/C
+                         net (fo=339, routed)         2.046    -0.572    a02/NOR37355/clk_out1
+    SLICE_X110Y121       FDCE                                         r  a02/NOR37355/y_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X111Y119       FDCE (Prop_fdce_C_Q)         0.419    -0.151 f  a02/NOR37358/y_reg/Q
-                         net (fo=3, routed)           0.972     0.821    a02/NOR37356/NOR37358_out
-    SLICE_X108Y119       LUT6 (Prop_lut6_I5_O)        0.299     1.120 r  a02/NOR37356/next_val_i_2/O
-                         net (fo=1, routed)           0.304     1.424    a02/NOR37302/next_val_reg_0
-    SLICE_X107Y120       LUT3 (Prop_lut3_I2_O)        0.124     1.548 r  a02/NOR37302/next_val_i_1__11/O
-                         net (fo=1, routed)           0.000     1.548    a02/NOR37302/next_val_i_1__11_n_0
+    SLICE_X110Y121       FDCE (Prop_fdce_C_Q)         0.419    -0.153 f  a02/NOR37355/y_reg/Q
+                         net (fo=3, routed)           1.004     0.851    a02/NOR37356/NOR37355_out
+    SLICE_X108Y119       LUT6 (Prop_lut6_I4_O)        0.299     1.150 r  a02/NOR37356/next_val_i_2/O
+                         net (fo=1, routed)           0.304     1.454    a02/NOR37302/next_val_reg_0
+    SLICE_X107Y120       LUT3 (Prop_lut3_I2_O)        0.124     1.578 r  a02/NOR37302/next_val_i_1__11/O
+                         net (fo=1, routed)           0.000     1.578    a02/NOR37302/next_val_i_1__11_n_0
     SLICE_X107Y120       FDPE                                         r  a02/NOR37302/next_val_reg/D
   -------------------------------------------------------------------    -------------------
 
@@ -281,73 +291,9 @@ Slack (MET) :             7.469ns  (required time - arrival time)
     SLICE_X107Y120       FDPE (Setup_fdpe_C_D)        0.032     9.018    a02/NOR37302/next_val_reg
   -------------------------------------------------------------------
                          required time                          9.018    
-                         arrival time                          -1.548    
+                         arrival time                          -1.578    
   -------------------------------------------------------------------
-                         slack                                  7.469    
-
-Slack (MET) :             7.477ns  (required time - arrival time)
-  Source:                 agc_clk_div/counter_reg[2]/C
-                            (rising edge-triggered cell FDCE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
-  Destination:            a02/NOR37103/next_val_reg/D
-                            (falling edge-triggered cell FDPE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
-  Path Group:             clk_out1_prop_clock_divisor
-  Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            9.766ns  (clk_out1_prop_clock_divisor fall@9.766ns - clk_out1_prop_clock_divisor rise@0.000ns)
-  Data Path Delay:        2.200ns  (logic 0.704ns (31.994%)  route 1.496ns (68.006%))
-  Logic Levels:           2  (LUT3=1 LUT5=1)
-  Clock Path Skew:        -0.029ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.220ns = ( 8.546 - 9.766 ) 
-    Source Clock Delay      (SCD):    -0.557ns
-    Clock Pessimism Removal (CPR):    0.634ns
-  Clock Uncertainty:      0.144ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
-    Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.278ns
-    Phase Error              (PE):    0.000ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_out1_prop_clock_divisor rise edge)
-                                                      0.000     0.000 r  
-    Y6                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    prop_clk_div/inst/clk_in1
-    Y6                   IBUF (Prop_ibuf_I_O)         1.484     1.484 r  prop_clk_div/inst/clkin1_ibufg/O
-                         net (fo=1, routed)           1.285     2.769    prop_clk_div/inst/clk_in1_prop_clock_divisor
-    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -7.343    -4.574 r  prop_clk_div/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           1.855    -2.719    prop_clk_div/inst/clk_out1_prop_clock_divisor
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.618 r  prop_clk_div/inst/clkout1_buf/O
-                         net (fo=339, routed)         2.061    -0.557    agc_clk_div/clk_out1
-    SLICE_X113Y102       FDCE                                         r  agc_clk_div/counter_reg[2]/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X113Y102       FDCE (Prop_fdce_C_Q)         0.456    -0.101 f  agc_clk_div/counter_reg[2]/Q
-                         net (fo=4, routed)           0.690     0.590    agc_clk_div/counter_reg[2]
-    SLICE_X112Y102       LUT3 (Prop_lut3_I2_O)        0.124     0.714 f  agc_clk_div/agc_clk_OBUF_inst_i_1/O
-                         net (fo=3, routed)           0.806     1.520    a02/NOR37103/agc_clk_OBUF
-    SLICE_X112Y111       LUT5 (Prop_lut5_I2_O)        0.124     1.644 r  a02/NOR37103/next_val_i_1/O
-                         net (fo=1, routed)           0.000     1.644    a02/NOR37103/p_0_in
-    SLICE_X112Y111       FDPE                                         r  a02/NOR37103/next_val_reg/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_out1_prop_clock_divisor fall edge)
-                                                      9.766     9.766 f  
-    Y6                                                0.000     9.766 f  clk (IN)
-                         net (fo=0)                   0.000     9.766    prop_clk_div/inst/clk_in1
-    Y6                   IBUF (Prop_ibuf_I_O)         1.414    11.179 f  prop_clk_div/inst/clkin1_ibufg/O
-                         net (fo=1, routed)           1.162    12.341    prop_clk_div/inst/clk_in1_prop_clock_divisor
-    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -7.438     4.904 f  prop_clk_div/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           1.691     6.595    prop_clk_div/inst/clk_out1_prop_clock_divisor
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.686 f  prop_clk_div/inst/clkout1_buf/O
-                         net (fo=339, routed)         1.860     8.546    a02/NOR37103/clk_out1
-    SLICE_X112Y111       FDPE                                         r  a02/NOR37103/next_val_reg/C  (IS_INVERTED)
-                         clock pessimism              0.634     9.180    
-                         clock uncertainty           -0.144     9.037    
-    SLICE_X112Y111       FDPE (Setup_fdpe_C_D)        0.084     9.121    a02/NOR37103/next_val_reg
-  -------------------------------------------------------------------
-                         required time                          9.121    
-                         arrival time                          -1.644    
-  -------------------------------------------------------------------
-                         slack                                  7.477    
+                         slack                                  7.439    
 
 Slack (MET) :             7.478ns  (required time - arrival time)
   Source:                 agc_clk_div/counter_reg[2]/C
@@ -357,7 +303,7 @@ Slack (MET) :             7.478ns  (required time - arrival time)
   Path Group:             clk_out1_prop_clock_divisor
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            9.766ns  (clk_out1_prop_clock_divisor fall@9.766ns - clk_out1_prop_clock_divisor rise@0.000ns)
-  Data Path Delay:        2.201ns  (logic 0.704ns (31.979%)  route 1.497ns (68.021%))
+  Data Path Delay:        2.201ns  (logic 0.704ns (31.980%)  route 1.497ns (68.020%))
   Logic Levels:           2  (LUT3=1 LUT5=1)
   Clock Path Skew:        -0.029ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    -1.220ns = ( 8.546 - 9.766 ) 
@@ -412,6 +358,70 @@ Slack (MET) :             7.478ns  (required time - arrival time)
                          arrival time                          -1.645    
   -------------------------------------------------------------------
                          slack                                  7.478    
+
+Slack (MET) :             7.495ns  (required time - arrival time)
+  Source:                 agc_clk_div/counter_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
+  Destination:            a02/NOR37103/next_val_reg/D
+                            (falling edge-triggered cell FDPE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
+  Path Group:             clk_out1_prop_clock_divisor
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            9.766ns  (clk_out1_prop_clock_divisor fall@9.766ns - clk_out1_prop_clock_divisor rise@0.000ns)
+  Data Path Delay:        2.182ns  (logic 0.704ns (32.269%)  route 1.478ns (67.731%))
+  Logic Levels:           2  (LUT3=1 LUT5=1)
+  Clock Path Skew:        -0.029ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.220ns = ( 8.546 - 9.766 ) 
+    Source Clock Delay      (SCD):    -0.557ns
+    Clock Pessimism Removal (CPR):    0.634ns
+  Clock Uncertainty:      0.144ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.278ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_prop_clock_divisor rise edge)
+                                                      0.000     0.000 r  
+    Y6                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    prop_clk_div/inst/clk_in1
+    Y6                   IBUF (Prop_ibuf_I_O)         1.484     1.484 r  prop_clk_div/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.285     2.769    prop_clk_div/inst/clk_in1_prop_clock_divisor
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.343    -4.574 r  prop_clk_div/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.855    -2.719    prop_clk_div/inst/clk_out1_prop_clock_divisor
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.618 r  prop_clk_div/inst/clkout1_buf/O
+                         net (fo=339, routed)         2.061    -0.557    agc_clk_div/clk_out1
+    SLICE_X113Y102       FDCE                                         r  agc_clk_div/counter_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y102       FDCE (Prop_fdce_C_Q)         0.456    -0.101 f  agc_clk_div/counter_reg[2]/Q
+                         net (fo=4, routed)           0.690     0.590    agc_clk_div/counter_reg[2]
+    SLICE_X112Y102       LUT3 (Prop_lut3_I2_O)        0.124     0.714 f  agc_clk_div/agc_clk_OBUF_inst_i_1/O
+                         net (fo=3, routed)           0.787     1.501    a02/NOR37103/agc_clk_OBUF
+    SLICE_X112Y111       LUT5 (Prop_lut5_I2_O)        0.124     1.625 r  a02/NOR37103/next_val_i_1/O
+                         net (fo=1, routed)           0.000     1.625    a02/NOR37103/p_0_in
+    SLICE_X112Y111       FDPE                                         r  a02/NOR37103/next_val_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_prop_clock_divisor fall edge)
+                                                      9.766     9.766 f  
+    Y6                                                0.000     9.766 f  clk (IN)
+                         net (fo=0)                   0.000     9.766    prop_clk_div/inst/clk_in1
+    Y6                   IBUF (Prop_ibuf_I_O)         1.414    11.179 f  prop_clk_div/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.162    12.341    prop_clk_div/inst/clk_in1_prop_clock_divisor
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.438     4.904 f  prop_clk_div/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.691     6.595    prop_clk_div/inst/clk_out1_prop_clock_divisor
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.686 f  prop_clk_div/inst/clkout1_buf/O
+                         net (fo=339, routed)         1.860     8.546    a02/NOR37103/clk_out1
+    SLICE_X112Y111       FDPE                                         r  a02/NOR37103/next_val_reg/C  (IS_INVERTED)
+                         clock pessimism              0.634     9.180    
+                         clock uncertainty           -0.144     9.037    
+    SLICE_X112Y111       FDPE (Setup_fdpe_C_D)        0.084     9.121    a02/NOR37103/next_val_reg
+  -------------------------------------------------------------------
+                         required time                          9.121    
+                         arrival time                          -1.625    
+  -------------------------------------------------------------------
+                         slack                                  7.495    
 
 Slack (MET) :             7.607ns  (required time - arrival time)
   Source:                 a02/NOR37448/y_reg/C
@@ -475,19 +485,19 @@ Slack (MET) :             7.607ns  (required time - arrival time)
   -------------------------------------------------------------------
                          slack                                  7.607    
 
-Slack (MET) :             7.645ns  (required time - arrival time)
-  Source:                 a02/NOR37126/y_reg/C
+Slack (MET) :             7.751ns  (required time - arrival time)
+  Source:                 a02/NOR37344/y_reg/C
                             (rising edge-triggered cell FDCE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
-  Destination:            a02/NOR37328/next_val_reg/D
-                            (falling edge-triggered cell FDCE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
+  Destination:            a02/NOR37443/next_val_reg/D
+                            (falling edge-triggered cell FDPE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
   Path Group:             clk_out1_prop_clock_divisor
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            9.766ns  (clk_out1_prop_clock_divisor fall@9.766ns - clk_out1_prop_clock_divisor rise@0.000ns)
-  Data Path Delay:        1.944ns  (logic 0.580ns (29.839%)  route 1.364ns (70.161%))
-  Logic Levels:           1  (LUT4=1)
-  Clock Path Skew:        -0.067ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.229ns = ( 8.537 - 9.766 ) 
-    Source Clock Delay      (SCD):    -0.568ns
+  Data Path Delay:        1.886ns  (logic 0.718ns (38.064%)  route 1.168ns (61.936%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.071ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.232ns = ( 8.534 - 9.766 ) 
+    Source Clock Delay      (SCD):    -0.567ns
     Clock Pessimism Removal (CPR):    0.594ns
   Clock Uncertainty:      0.144ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -506,14 +516,14 @@ Slack (MET) :             7.645ns  (required time - arrival time)
                                                      -7.343    -4.574 r  prop_clk_div/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.855    -2.719    prop_clk_div/inst/clk_out1_prop_clock_divisor
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.618 r  prop_clk_div/inst/clkout1_buf/O
-                         net (fo=339, routed)         2.050    -0.568    a02/NOR37126/clk_out1
-    SLICE_X109Y116       FDCE                                         r  a02/NOR37126/y_reg/C
+                         net (fo=339, routed)         2.051    -0.567    a02/NOR37344/clk_out1
+    SLICE_X113Y117       FDCE                                         r  a02/NOR37344/y_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X109Y116       FDCE (Prop_fdce_C_Q)         0.456    -0.112 f  a02/NOR37126/y_reg/Q
-                         net (fo=18, routed)          1.364     1.252    a02/NOR37328/EVNSET_
-    SLICE_X111Y121       LUT4 (Prop_lut4_I1_O)        0.124     1.376 r  a02/NOR37328/next_val_i_1__77/O
-                         net (fo=1, routed)           0.000     1.376    a02/NOR37328/next_val0
-    SLICE_X111Y121       FDCE                                         r  a02/NOR37328/next_val_reg/D
+    SLICE_X113Y117       FDCE (Prop_fdce_C_Q)         0.419    -0.148 f  a02/NOR37344/y_reg/Q
+                         net (fo=3, routed)           1.168     1.021    a02/NOR37443/next_val_reg_0
+    SLICE_X112Y126       LUT3 (Prop_lut3_I2_O)        0.299     1.320 r  a02/NOR37443/next_val_i_1__32/O
+                         net (fo=1, routed)           0.000     1.320    a02/NOR37443/next_val_i_1__32_n_0
+    SLICE_X112Y126       FDPE                                         r  a02/NOR37443/next_val_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_prop_clock_divisor fall edge)
@@ -526,31 +536,31 @@ Slack (MET) :             7.645ns  (required time - arrival time)
                                                      -7.438     4.904 f  prop_clk_div/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.691     6.595    prop_clk_div/inst/clk_out1_prop_clock_divisor
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.686 f  prop_clk_div/inst/clkout1_buf/O
-                         net (fo=339, routed)         1.851     8.537    a02/NOR37328/clk_out1
-    SLICE_X111Y121       FDCE                                         r  a02/NOR37328/next_val_reg/C  (IS_INVERTED)
-                         clock pessimism              0.594     9.131    
-                         clock uncertainty           -0.144     8.988    
-    SLICE_X111Y121       FDCE (Setup_fdce_C_D)        0.034     9.022    a02/NOR37328/next_val_reg
+                         net (fo=339, routed)         1.848     8.534    a02/NOR37443/clk_out1
+    SLICE_X112Y126       FDPE                                         r  a02/NOR37443/next_val_reg/C  (IS_INVERTED)
+                         clock pessimism              0.594     9.128    
+                         clock uncertainty           -0.144     8.985    
+    SLICE_X112Y126       FDPE (Setup_fdpe_C_D)        0.086     9.071    a02/NOR37443/next_val_reg
   -------------------------------------------------------------------
-                         required time                          9.022    
-                         arrival time                          -1.376    
+                         required time                          9.071    
+                         arrival time                          -1.320    
   -------------------------------------------------------------------
-                         slack                                  7.645    
+                         slack                                  7.751    
 
-Slack (MET) :             7.760ns  (required time - arrival time)
-  Source:                 a02/NOR37327/y_reg/C
+Slack (MET) :             7.777ns  (required time - arrival time)
+  Source:                 a02/NOR37341/y_reg/C
                             (rising edge-triggered cell FDCE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
-  Destination:            a02/NOR37322/next_val_reg/D
-                            (falling edge-triggered cell FDCE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
+  Destination:            a02/NOR37342/next_val_reg/D
+                            (falling edge-triggered cell FDPE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
   Path Group:             clk_out1_prop_clock_divisor
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            9.766ns  (clk_out1_prop_clock_divisor fall@9.766ns - clk_out1_prop_clock_divisor rise@0.000ns)
-  Data Path Delay:        1.873ns  (logic 0.580ns (30.964%)  route 1.293ns (69.036%))
-  Logic Levels:           1  (LUT5=1)
-  Clock Path Skew:        -0.023ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.228ns = ( 8.538 - 9.766 ) 
-    Source Clock Delay      (SCD):    -0.571ns
-    Clock Pessimism Removal (CPR):    0.634ns
+  Data Path Delay:        1.856ns  (logic 0.773ns (41.657%)  route 1.083ns (58.343%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        -0.024ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.231ns = ( 8.535 - 9.766 ) 
+    Source Clock Delay      (SCD):    -0.572ns
+    Clock Pessimism Removal (CPR):    0.635ns
   Clock Uncertainty:      0.144ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Discrete Jitter          (DJ):    0.278ns
@@ -568,14 +578,14 @@ Slack (MET) :             7.760ns  (required time - arrival time)
                                                      -7.343    -4.574 r  prop_clk_div/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.855    -2.719    prop_clk_div/inst/clk_out1_prop_clock_divisor
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.618 r  prop_clk_div/inst/clkout1_buf/O
-                         net (fo=339, routed)         2.047    -0.571    a02/NOR37327/clk_out1
-    SLICE_X110Y120       FDCE                                         r  a02/NOR37327/y_reg/C
+                         net (fo=339, routed)         2.046    -0.572    a02/NOR37341/clk_out1
+    SLICE_X108Y119       FDCE                                         r  a02/NOR37341/y_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X110Y120       FDCE (Prop_fdce_C_Q)         0.456    -0.115 f  a02/NOR37327/y_reg/Q
-                         net (fo=5, routed)           1.293     1.179    a02/NOR37322/NOR37327_out
-    SLICE_X110Y119       LUT5 (Prop_lut5_I0_O)        0.124     1.303 r  a02/NOR37322/next_val_i_1__73/O
-                         net (fo=1, routed)           0.000     1.303    a02/NOR37322/next_val0
-    SLICE_X110Y119       FDCE                                         r  a02/NOR37322/next_val_reg/D
+    SLICE_X108Y119       FDCE (Prop_fdce_C_Q)         0.478    -0.094 f  a02/NOR37341/y_reg/Q
+                         net (fo=3, routed)           1.083     0.989    a02/NOR37342/NOR37341_out
+    SLICE_X109Y120       LUT4 (Prop_lut4_I0_O)        0.295     1.284 r  a02/NOR37342/next_val_i_1__21/O
+                         net (fo=1, routed)           0.000     1.284    a02/NOR37342/next_val_i_1__21_n_0
+    SLICE_X109Y120       FDPE                                         r  a02/NOR37342/next_val_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_prop_clock_divisor fall edge)
@@ -588,18 +598,18 @@ Slack (MET) :             7.760ns  (required time - arrival time)
                                                      -7.438     4.904 f  prop_clk_div/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.691     6.595    prop_clk_div/inst/clk_out1_prop_clock_divisor
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.686 f  prop_clk_div/inst/clkout1_buf/O
-                         net (fo=339, routed)         1.852     8.538    a02/NOR37322/clk_out1
-    SLICE_X110Y119       FDCE                                         r  a02/NOR37322/next_val_reg/C  (IS_INVERTED)
-                         clock pessimism              0.634     9.172    
-                         clock uncertainty           -0.144     9.029    
-    SLICE_X110Y119       FDCE (Setup_fdce_C_D)        0.034     9.063    a02/NOR37322/next_val_reg
+                         net (fo=339, routed)         1.849     8.535    a02/NOR37342/clk_out1
+    SLICE_X109Y120       FDPE                                         r  a02/NOR37342/next_val_reg/C  (IS_INVERTED)
+                         clock pessimism              0.635     9.170    
+                         clock uncertainty           -0.144     9.027    
+    SLICE_X109Y120       FDPE (Setup_fdpe_C_D)        0.035     9.062    a02/NOR37342/next_val_reg
   -------------------------------------------------------------------
-                         required time                          9.063    
-                         arrival time                          -1.303    
+                         required time                          9.062    
+                         arrival time                          -1.284    
   -------------------------------------------------------------------
-                         slack                                  7.760    
+                         slack                                  7.777    
 
-Slack (MET) :             7.813ns  (required time - arrival time)
+Slack (MET) :             7.833ns  (required time - arrival time)
   Source:                 a02/NOR37126/y_reg/C
                             (rising edge-triggered cell FDCE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
   Destination:            a02/NOR37319/next_val_reg/D
@@ -607,7 +617,7 @@ Slack (MET) :             7.813ns  (required time - arrival time)
   Path Group:             clk_out1_prop_clock_divisor
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            9.766ns  (clk_out1_prop_clock_divisor fall@9.766ns - clk_out1_prop_clock_divisor rise@0.000ns)
-  Data Path Delay:        1.825ns  (logic 0.580ns (31.787%)  route 1.245ns (68.213%))
+  Data Path Delay:        1.805ns  (logic 0.580ns (32.136%)  route 1.225ns (67.864%))
   Logic Levels:           1  (LUT4=1)
   Clock Path Skew:        -0.066ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    -1.228ns = ( 8.538 - 9.766 ) 
@@ -634,9 +644,9 @@ Slack (MET) :             7.813ns  (required time - arrival time)
     SLICE_X109Y116       FDCE                                         r  a02/NOR37126/y_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X109Y116       FDCE (Prop_fdce_C_Q)         0.456    -0.112 f  a02/NOR37126/y_reg/Q
-                         net (fo=18, routed)          1.245     1.133    a02/NOR37319/EVNSET_
-    SLICE_X112Y119       LUT4 (Prop_lut4_I1_O)        0.124     1.257 r  a02/NOR37319/next_val_i_1__71/O
-                         net (fo=1, routed)           0.000     1.257    a02/NOR37319/next_val0
+                         net (fo=18, routed)          1.225     1.113    a02/NOR37319/EVNSET_
+    SLICE_X112Y119       LUT4 (Prop_lut4_I1_O)        0.124     1.237 r  a02/NOR37319/next_val_i_1__71/O
+                         net (fo=1, routed)           0.000     1.237    a02/NOR37319/next_val0
     SLICE_X112Y119       FDCE                                         r  a02/NOR37319/next_val_reg/D
   -------------------------------------------------------------------    -------------------
 
@@ -657,11 +667,11 @@ Slack (MET) :             7.813ns  (required time - arrival time)
     SLICE_X112Y119       FDCE (Setup_fdce_C_D)        0.082     9.071    a02/NOR37319/next_val_reg
   -------------------------------------------------------------------
                          required time                          9.071    
-                         arrival time                          -1.257    
+                         arrival time                          -1.237    
   -------------------------------------------------------------------
-                         slack                                  7.813    
+                         slack                                  7.833    
 
-Slack (MET) :             7.833ns  (required time - arrival time)
+Slack (MET) :             7.835ns  (required time - arrival time)
   Source:                 a02/NOR37126/y_reg/C
                             (rising edge-triggered cell FDCE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
   Destination:            a02/NOR37355/next_val_reg/D
@@ -669,7 +679,7 @@ Slack (MET) :             7.833ns  (required time - arrival time)
   Path Group:             clk_out1_prop_clock_divisor
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            9.766ns  (clk_out1_prop_clock_divisor fall@9.766ns - clk_out1_prop_clock_divisor rise@0.000ns)
-  Data Path Delay:        1.792ns  (logic 0.580ns (32.371%)  route 1.212ns (67.629%))
+  Data Path Delay:        1.790ns  (logic 0.580ns (32.408%)  route 1.210ns (67.592%))
   Logic Levels:           1  (LUT5=1)
   Clock Path Skew:        -0.029ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    -1.232ns = ( 8.534 - 9.766 ) 
@@ -696,9 +706,9 @@ Slack (MET) :             7.833ns  (required time - arrival time)
     SLICE_X109Y116       FDCE                                         r  a02/NOR37126/y_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X109Y116       FDCE (Prop_fdce_C_Q)         0.456    -0.112 f  a02/NOR37126/y_reg/Q
-                         net (fo=18, routed)          1.212     1.100    a02/NOR37355/EVNSET_
-    SLICE_X109Y121       LUT5 (Prop_lut5_I0_O)        0.124     1.224 r  a02/NOR37355/next_val_i_1__94/O
-                         net (fo=1, routed)           0.000     1.224    a02/NOR37355/next_val0
+                         net (fo=18, routed)          1.210     1.098    a02/NOR37355/EVNSET_
+    SLICE_X109Y121       LUT5 (Prop_lut5_I0_O)        0.124     1.222 r  a02/NOR37355/next_val_i_1__94/O
+                         net (fo=1, routed)           0.000     1.222    a02/NOR37355/next_val0
     SLICE_X109Y121       FDCE                                         r  a02/NOR37355/next_val_reg/D
   -------------------------------------------------------------------    -------------------
 
@@ -719,9 +729,9 @@ Slack (MET) :             7.833ns  (required time - arrival time)
     SLICE_X109Y121       FDCE (Setup_fdce_C_D)        0.032     9.058    a02/NOR37355/next_val_reg
   -------------------------------------------------------------------
                          required time                          9.058    
-                         arrival time                          -1.224    
+                         arrival time                          -1.222    
   -------------------------------------------------------------------
-                         slack                                  7.833    
+                         slack                                  7.835    
 
 Slack (MET) :             7.855ns  (required time - arrival time)
   Source:                 a02/NOR37306/y_reg/C
@@ -785,20 +795,20 @@ Slack (MET) :             7.855ns  (required time - arrival time)
   -------------------------------------------------------------------
                          slack                                  7.855    
 
-Slack (MET) :             7.874ns  (required time - arrival time)
-  Source:                 a02/NOR37326/y_reg/C
-                            (rising edge-triggered cell FDPE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
-  Destination:            a02/NOR37327/next_val_reg/D
+Slack (MET) :             7.868ns  (required time - arrival time)
+  Source:                 a02/NOR37343/y_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
+  Destination:            a02/NOR37346/next_val_reg/D
                             (falling edge-triggered cell FDCE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
   Path Group:             clk_out1_prop_clock_divisor
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            9.766ns  (clk_out1_prop_clock_divisor fall@9.766ns - clk_out1_prop_clock_divisor rise@0.000ns)
-  Data Path Delay:        1.759ns  (logic 0.718ns (40.830%)  route 1.041ns (59.170%))
-  Logic Levels:           1  (LUT5=1)
-  Clock Path Skew:        -0.024ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.228ns = ( 8.538 - 9.766 ) 
-    Source Clock Delay      (SCD):    -0.570ns
-    Clock Pessimism Removal (CPR):    0.634ns
+  Data Path Delay:        1.723ns  (logic 0.718ns (41.674%)  route 1.005ns (58.326%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        -0.066ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -1.231ns = ( 8.535 - 9.766 ) 
+    Source Clock Delay      (SCD):    -0.571ns
+    Clock Pessimism Removal (CPR):    0.594ns
   Clock Uncertainty:      0.144ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Discrete Jitter          (DJ):    0.278ns
@@ -816,14 +826,14 @@ Slack (MET) :             7.874ns  (required time - arrival time)
                                                      -7.343    -4.574 r  prop_clk_div/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.855    -2.719    prop_clk_div/inst/clk_out1_prop_clock_divisor
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101    -2.618 r  prop_clk_div/inst/clkout1_buf/O
-                         net (fo=339, routed)         2.048    -0.570    a02/NOR37326/clk_out1
-    SLICE_X111Y119       FDPE                                         r  a02/NOR37326/y_reg/C
+                         net (fo=339, routed)         2.047    -0.571    a02/NOR37343/clk_out1
+    SLICE_X110Y120       FDCE                                         r  a02/NOR37343/y_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X111Y119       FDPE (Prop_fdpe_C_Q)         0.419    -0.151 f  a02/NOR37326/y_reg/Q
-                         net (fo=5, routed)           1.041     0.890    a02/NOR37327/T06DC_
-    SLICE_X111Y120       LUT5 (Prop_lut5_I1_O)        0.299     1.189 r  a02/NOR37327/next_val_i_1__76/O
-                         net (fo=1, routed)           0.000     1.189    a02/NOR37327/next_val0
-    SLICE_X111Y120       FDCE                                         r  a02/NOR37327/next_val_reg/D
+    SLICE_X110Y120       FDCE (Prop_fdce_C_Q)         0.419    -0.152 f  a02/NOR37343/y_reg/Q
+                         net (fo=6, routed)           1.005     0.853    a02/NOR37346/NOR37343_out
+    SLICE_X109Y119       LUT4 (Prop_lut4_I0_O)        0.299     1.152 r  a02/NOR37346/next_val_i_1__91/O
+                         net (fo=1, routed)           0.000     1.152    a02/NOR37346/next_val0
+    SLICE_X109Y119       FDCE                                         r  a02/NOR37346/next_val_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_prop_clock_divisor fall edge)
@@ -836,16 +846,16 @@ Slack (MET) :             7.874ns  (required time - arrival time)
                                                      -7.438     4.904 f  prop_clk_div/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.691     6.595    prop_clk_div/inst/clk_out1_prop_clock_divisor
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     6.686 f  prop_clk_div/inst/clkout1_buf/O
-                         net (fo=339, routed)         1.852     8.538    a02/NOR37327/clk_out1
-    SLICE_X111Y120       FDCE                                         r  a02/NOR37327/next_val_reg/C  (IS_INVERTED)
-                         clock pessimism              0.634     9.172    
-                         clock uncertainty           -0.144     9.029    
-    SLICE_X111Y120       FDCE (Setup_fdce_C_D)        0.034     9.063    a02/NOR37327/next_val_reg
+                         net (fo=339, routed)         1.849     8.535    a02/NOR37346/clk_out1
+    SLICE_X109Y119       FDCE                                         r  a02/NOR37346/next_val_reg/C  (IS_INVERTED)
+                         clock pessimism              0.594     9.129    
+                         clock uncertainty           -0.144     8.986    
+    SLICE_X109Y119       FDCE (Setup_fdce_C_D)        0.035     9.021    a02/NOR37346/next_val_reg
   -------------------------------------------------------------------
-                         required time                          9.063    
-                         arrival time                          -1.189    
+                         required time                          9.021    
+                         arrival time                          -1.152    
   -------------------------------------------------------------------
-                         slack                                  7.874    
+                         slack                                  7.868    
 
 
 
@@ -1186,6 +1196,61 @@ Slack (MET) :             0.226ns  (arrival time - required time)
                          slack                                  0.226    
 
 Slack (MET) :             0.229ns  (arrival time - required time)
+  Source:                 a02/NOR37106/y_reg/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
+  Destination:            a02/NOR37106/prev_val_reg/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
+  Path Group:             clk_out1_prop_clock_divisor
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_prop_clock_divisor rise@0.000ns - clk_out1_prop_clock_divisor rise@0.000ns)
+  Data Path Delay:        0.276ns  (logic 0.141ns (51.052%)  route 0.135ns (48.948%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.699ns
+    Source Clock Delay      (SCD):    -0.467ns
+    Clock Pessimism Removal (CPR):    -0.232ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_prop_clock_divisor rise edge)
+                                                      0.000     0.000 r  
+    Y6                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    prop_clk_div/inst/clk_in1
+    Y6                   IBUF (Prop_ibuf_I_O)         0.252     0.252 r  prop_clk_div/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.440     0.692    prop_clk_div/inst/clk_in1_prop_clock_divisor
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.421    -1.728 r  prop_clk_div/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.518    -1.210    prop_clk_div/inst/clk_out1_prop_clock_divisor
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.184 r  prop_clk_div/inst/clkout1_buf/O
+                         net (fo=339, routed)         0.717    -0.467    a02/NOR37106/clk_out1
+    SLICE_X113Y112       FDCE                                         r  a02/NOR37106/y_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X113Y112       FDCE (Prop_fdce_C_Q)         0.141    -0.326 r  a02/NOR37106/y_reg/Q
+                         net (fo=4, routed)           0.135    -0.191    a02/NOR37106/NOR37106_out
+    SLICE_X113Y112       FDCE                                         r  a02/NOR37106/prev_val_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_prop_clock_divisor rise edge)
+                                                      0.000     0.000 r  
+    Y6                                                0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    prop_clk_div/inst/clk_in1
+    Y6                   IBUF (Prop_ibuf_I_O)         0.440     0.440 r  prop_clk_div/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.480     0.920    prop_clk_div/inst/clk_in1_prop_clock_divisor
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.204    -2.284 r  prop_clk_div/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.564    -1.720    prop_clk_div/inst/clk_out1_prop_clock_divisor
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.691 r  prop_clk_div/inst/clkout1_buf/O
+                         net (fo=339, routed)         0.992    -0.699    a02/NOR37106/clk_out1
+    SLICE_X113Y112       FDCE                                         r  a02/NOR37106/prev_val_reg/C
+                         clock pessimism              0.232    -0.467    
+    SLICE_X113Y112       FDCE (Hold_fdce_C_D)         0.047    -0.420    a02/NOR37106/prev_val_reg
+  -------------------------------------------------------------------
+                         required time                          0.420    
+                         arrival time                          -0.191    
+  -------------------------------------------------------------------
+                         slack                                  0.229    
+
+Slack (MET) :             0.229ns  (arrival time - required time)
   Source:                 agc_clk_div/counter_reg[2]/C
                             (rising edge-triggered cell FDCE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
   Destination:            agc_clk_div/counter_reg[2]/D
@@ -1241,61 +1306,6 @@ Slack (MET) :             0.229ns  (arrival time - required time)
                          arrival time                          -0.142    
   -------------------------------------------------------------------
                          slack                                  0.229    
-
-Slack (MET) :             0.231ns  (arrival time - required time)
-  Source:                 a02/NOR37106/y_reg/C
-                            (rising edge-triggered cell FDCE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
-  Destination:            a02/NOR37106/prev_val_reg/D
-                            (rising edge-triggered cell FDCE clocked by clk_out1_prop_clock_divisor  {rise@0.000ns fall@9.766ns period=19.531ns})
-  Path Group:             clk_out1_prop_clock_divisor
-  Path Type:              Hold (Min at Fast Process Corner)
-  Requirement:            0.000ns  (clk_out1_prop_clock_divisor rise@0.000ns - clk_out1_prop_clock_divisor rise@0.000ns)
-  Data Path Delay:        0.278ns  (logic 0.141ns (50.673%)  route 0.137ns (49.327%))
-  Logic Levels:           0  
-  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    -0.699ns
-    Source Clock Delay      (SCD):    -0.467ns
-    Clock Pessimism Removal (CPR):    -0.232ns
-
-    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
-  -------------------------------------------------------------------    -------------------
-                         (clock clk_out1_prop_clock_divisor rise edge)
-                                                      0.000     0.000 r  
-    Y6                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    prop_clk_div/inst/clk_in1
-    Y6                   IBUF (Prop_ibuf_I_O)         0.252     0.252 r  prop_clk_div/inst/clkin1_ibufg/O
-                         net (fo=1, routed)           0.440     0.692    prop_clk_div/inst/clk_in1_prop_clock_divisor
-    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -2.421    -1.728 r  prop_clk_div/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.518    -1.210    prop_clk_div/inst/clk_out1_prop_clock_divisor
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.184 r  prop_clk_div/inst/clkout1_buf/O
-                         net (fo=339, routed)         0.717    -0.467    a02/NOR37106/clk_out1
-    SLICE_X113Y112       FDCE                                         r  a02/NOR37106/y_reg/C
-  -------------------------------------------------------------------    -------------------
-    SLICE_X113Y112       FDCE (Prop_fdce_C_Q)         0.141    -0.326 r  a02/NOR37106/y_reg/Q
-                         net (fo=4, routed)           0.137    -0.189    a02/NOR37106/NOR37106_out
-    SLICE_X113Y112       FDCE                                         r  a02/NOR37106/prev_val_reg/D
-  -------------------------------------------------------------------    -------------------
-
-                         (clock clk_out1_prop_clock_divisor rise edge)
-                                                      0.000     0.000 r  
-    Y6                                                0.000     0.000 r  clk (IN)
-                         net (fo=0)                   0.000     0.000    prop_clk_div/inst/clk_in1
-    Y6                   IBUF (Prop_ibuf_I_O)         0.440     0.440 r  prop_clk_div/inst/clkin1_ibufg/O
-                         net (fo=1, routed)           0.480     0.920    prop_clk_div/inst/clk_in1_prop_clock_divisor
-    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
-                                                     -3.204    -2.284 r  prop_clk_div/inst/mmcm_adv_inst/CLKOUT0
-                         net (fo=1, routed)           0.564    -1.720    prop_clk_div/inst/clk_out1_prop_clock_divisor
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029    -1.691 r  prop_clk_div/inst/clkout1_buf/O
-                         net (fo=339, routed)         0.992    -0.699    a02/NOR37106/clk_out1
-    SLICE_X113Y112       FDCE                                         r  a02/NOR37106/prev_val_reg/C
-                         clock pessimism              0.232    -0.467    
-    SLICE_X113Y112       FDCE (Hold_fdce_C_D)         0.047    -0.420    a02/NOR37106/prev_val_reg
-  -------------------------------------------------------------------
-                         required time                          0.420    
-                         arrival time                          -0.189    
-  -------------------------------------------------------------------
-                         slack                                  0.231    
 
 Slack (MET) :             0.231ns  (arrival time - required time)
   Source:                 agc_clk_div/counter_reg[1]/C
@@ -1432,26 +1442,26 @@ Min Period        n/a     FDCE/C              n/a            1.000         19.53
 Min Period        n/a     FDPE/C              n/a            1.000         19.531      18.531     SLICE_X112Y111   a02/NOR37103/next_val_reg/C
 Min Period        n/a     FDPE/C              n/a            1.000         19.531      18.531     SLICE_X113Y111   a02/NOR37103/prev_val_reg/C
 Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       19.531      193.829    MMCME2_ADV_X0Y0  prop_clk_div/inst/mmcm_adv_inst/CLKOUT0
-Low Pulse Width   Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X113Y123   a02/NOR37437/prev_val_reg/C
-Low Pulse Width   Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X113Y123   a02/NOR37437/y_reg/C
-Low Pulse Width   Slow    FDPE/C              n/a            0.500         9.766       9.266      SLICE_X113Y126   a02/NOR37443/prev_val_reg/C
-Low Pulse Width   Slow    FDPE/C              n/a            0.500         9.766       9.266      SLICE_X113Y126   a02/NOR37443/y_reg/C
-Low Pulse Width   Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X113Y123   a02/NOR37415/prev_val_reg/C
-Low Pulse Width   Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X113Y123   a02/NOR37415/y_reg/C
-Low Pulse Width   Slow    FDPE/C              n/a            0.500         9.766       9.266      SLICE_X112Y123   a02/NOR37416/prev_val_reg/C
-Low Pulse Width   Slow    FDPE/C              n/a            0.500         9.766       9.266      SLICE_X112Y123   a02/NOR37416/y_reg/C
-Low Pulse Width   Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X113Y126   a02/NOR37427/prev_val_reg/C
-Low Pulse Width   Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X113Y126   a02/NOR37427/y_reg/C
-High Pulse Width  Slow    FDPE/C              n/a            0.500         9.766       9.266      SLICE_X112Y126   a02/NOR37443/next_val_reg/C
-High Pulse Width  Slow    FDPE/C              n/a            0.500         9.766       9.266      SLICE_X113Y122   a02/NOR37412/next_val_reg/C
-High Pulse Width  Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X113Y122   a02/NOR37415/next_val_reg/C
-High Pulse Width  Slow    FDPE/C              n/a            0.500         9.766       9.266      SLICE_X112Y122   a02/NOR37416/next_val_reg/C
-High Pulse Width  Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X112Y126   a02/NOR37427/next_val_reg/C
-High Pulse Width  Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X109Y121   a02/NOR37355/next_val_reg/C
-High Pulse Width  Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X113Y122   a02/NOR37437/next_val_reg/C
-High Pulse Width  Fast    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X109Y116   a02/NOR37122/y_reg/C
-High Pulse Width  Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X107Y116   a02/NOR37125/next_val_reg/C
-High Pulse Width  Fast    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X106Y116   a02/NOR37125/prev_val_reg/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X112Y111   a02/NOR37101/next_val_reg/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X112Y111   a02/NOR37101/next_val_reg/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X111Y111   a02/NOR37101/prev_val_reg/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X111Y111   a02/NOR37101/prev_val_reg/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X111Y111   a02/NOR37101/y_reg/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X111Y111   a02/NOR37101/y_reg/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X112Y111   a02/NOR37102/next_val_reg/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X112Y111   a02/NOR37102/next_val_reg/C
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X113Y111   a02/NOR37102/prev_val_reg/C
+Low Pulse Width   Fast    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X113Y111   a02/NOR37102/prev_val_reg/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X112Y111   a02/NOR37101/next_val_reg/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X112Y111   a02/NOR37101/next_val_reg/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X111Y111   a02/NOR37101/prev_val_reg/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X111Y111   a02/NOR37101/prev_val_reg/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X111Y111   a02/NOR37101/y_reg/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X111Y111   a02/NOR37101/y_reg/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X112Y111   a02/NOR37102/next_val_reg/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X112Y111   a02/NOR37102/next_val_reg/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X113Y111   a02/NOR37102/prev_val_reg/C
+High Pulse Width  Fast    FDCE/C              n/a            0.500         9.766       9.266      SLICE_X113Y111   a02/NOR37102/prev_val_reg/C
 
 
 
