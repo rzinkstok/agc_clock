@@ -38,14 +38,20 @@ Check that the device is properly recognized:
 - `lsusb` should show an entry `ID 0403:6014 Future Technology Devices International, Ltd FT232H Single HS USB-UART/FIFO IC`
 - The permissions on `/dev/bus/usb/<bus number>/<device number>` should be `666`.
 
+## Vitis/Vivado install
+
+- Install the libraries needed
+- Download Vitis/Vivado
+- Install Vitis/Vivado
+- Install the Styx board support files from https://github.com/numato/vivadoBSP
 
 ## Programming
 
 - After generating the bitstream, export the hardware using `File - Export - Export Hardware...`.
 - At this point, you can use the Hardware Manager to program the device directly. This will work but the program is lost
   when the device is powered down. To make the program permanent, instead do the following:
-- Select `Include bitstream` and `Local to project`, then click OK; overwrite if asked.
-- Launch the SDK
+- Starting from `File - Export - Export Hardware...`, select `Include bitstream` and `Local to project`, then click OK; overwrite if asked.
+- Launch Vitis from the `Tools - Launch Vitis IDE` menu
 - Create a new application project by selecting `File - New - Application Project`
 - Name it `fsbl`, leave the rest default. Note the hardware platform, this should correspond to the folder where the bitstream ended up. Click `Next`.
 - Select `Zynq FSBL` and click `Finish`.
